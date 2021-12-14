@@ -14,7 +14,9 @@ class CreatePaisTable extends Migration
     public function up()
     {
         Schema::create('pais', function (Blueprint $table) {
-            $table->id();
+            $table->increments('idPais');
+            $table->string('nomPais');
+            $table->string('continent');
             $table->timestamps();
         });
     }
