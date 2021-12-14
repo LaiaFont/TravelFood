@@ -15,6 +15,8 @@ class CreateCiutatPlatTable extends Migration
     {
         Schema::create('ciutat_plat', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('ciutat_id')->constrained('ciutat');
+            $table->foreignId('plat_id')->constrained('plat');
             $table->timestamps();
         });
     }
