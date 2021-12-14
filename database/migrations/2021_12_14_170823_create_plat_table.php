@@ -15,7 +15,7 @@ class CreatePlatTable extends Migration
     {
         Schema::create('plat', function (Blueprint $table) {
             $table->id();
-            $table->string('nomPlat');
+            $table->string('plat_nom');
             $table->string('descripcio');
             $table->timestamps();
         });

@@ -15,7 +15,7 @@ class CreateCiutatTable extends Migration
     {
         Schema::create('ciutat', function (Blueprint $table) {
             $table->id();
-            $table->string('nomCiutat');
+            $table->string('ciutat_nom');
             $table->timestamps();
         });
     }
