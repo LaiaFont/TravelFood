@@ -14,9 +14,8 @@ class CreateCiutatTable extends Migration
     public function up()
     {
         Schema::create('ciutat', function (Blueprint $table) {
-            $table->increments('idCiutat');
+            $table->id();
             $table->string('nomCiutat');
-            $table->foreignId('idPais')->constrained('pais');
             $table->timestamps();
         });
     }
