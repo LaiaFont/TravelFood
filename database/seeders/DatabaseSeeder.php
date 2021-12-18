@@ -322,5 +322,71 @@ class DatabaseSeeder extends Seeder
             'nom'=> 'Picada',
             'descripcio'=> "Pots trobar des de les més petites fins a les més grans. Les picades més simples porten formatge, pernil cuit, salami, olives i patates fregits o blat de moro, però poden portar gairebé de tot: mortadel·la, truita de patates, salsitxes, falafel, anxoves… La forma tradicional de servir aquest menjar típic és en una taula de fusta en forma d'aperitiu."
         ]);
+
+        //INGREDIENTS
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pastanaga',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Vedella',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pollastre',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' =>'Gambes',
+            'categoria_id' => 3
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Calamar',
+            'categoria_id' => 3
+        ]);
+
+        //CATEGORIES
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Verdures'
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Carn'
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Marisc'
+        ]);
+
+        //CIUTAT-PLAT
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 1,
+            'plat_id' => 1
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 2,
+            'plat_id' => 2
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 3,
+            'plat_id' => 3
+        ]);
+
+        //INGREDIENT-PLAT
+        DB::table('ciutat_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 1
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 2
+        ]);
     }
 }
