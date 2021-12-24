@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ciutat extends Model
 {
+    protected $table="ciutat";
     public function pais() {
-        return $this->belongsTo('Pais');
+        return $this->belongsTo('App\Models\Pais');
     }
 }

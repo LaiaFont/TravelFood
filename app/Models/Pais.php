@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pais extends Model
 {
+    protected $table="pais";
     public function ciutat() {
-        return $this->hasMany('Ciutat');
+        return $this->hasMany('App\Models\Ciutat');
     }
 }
