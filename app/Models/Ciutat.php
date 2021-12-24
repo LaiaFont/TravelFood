@@ -10,6 +10,5 @@ class Ciutat extends Model
     protected $table="ciutat";
     public function pais() {
         return $this->belongsTo('App\Models\Pais');
-        print("HOLIUIS");
     }
 }
