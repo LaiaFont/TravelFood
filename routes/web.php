@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/home', [\App\Http\Controllers\PaisController::class, 'index'])->name('home'); //index és una funció a dins el controlador
 
 
 Route::group(['prefix' => 'admin'], function () {
