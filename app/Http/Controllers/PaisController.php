@@ -44,9 +44,10 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function show(Pais $pais)
+    public function show(Pais $paisos)
     {
-        //
+        //Prova del pais controller per veure vista de prova, funciona
+        return view('main', ['paisos'=>$paisos]);
     }
 
     /**
