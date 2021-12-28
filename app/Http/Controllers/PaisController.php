@@ -14,7 +14,9 @@ class PaisController extends Controller
      */
     public function index()
     {
-        //
+        //Prova del pais controller per veure vista de prova, funciona
+        $paisos = Pais::orderBy('continent')->simplePaginate(10);
+        return view('main', ['paisos'=>$paisos]);
     }
 
     /**
@@ -46,8 +48,7 @@ class PaisController extends Controller
      */
     public function show(Pais $paisos)
     {
-        //Prova del pais controller per veure vista de prova, funciona
-        return view('main', ['paisos'=>$paisos]);
+        
     }
 
     /**

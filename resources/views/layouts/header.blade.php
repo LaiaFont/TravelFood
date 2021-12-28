@@ -9,13 +9,9 @@
 <body>
     <!-- Header -->
     <header>
+        <a class="navbar-brand" href="{{ url('/home')}}">
+            <img src="{{asset('images/logo.png')}}" id="logo" class="img-fluid" alt="Logo">
+        </a>
     </header>
-
-    <!-- Content -->
-    @yield('content')
-
-    <!-- Footer -->
-    <footer>
-    </footer>
 </body>
 </html>
