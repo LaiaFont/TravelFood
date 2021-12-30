@@ -14,9 +14,15 @@ class PaisController extends Controller
      */
     public function index()
     {
-        //Prova del pais controller per veure vista de prova, funciona
+        $continents = [];
+        //Envia tots els paisos ordenats per continent
         $paisos = Pais::orderBy('continent')->simplePaginate(10);
-        return view('main', ['paisos'=>$paisos]);
+        foreach ($paisos as $pais) {
+            if (!in_array($pais->continent, $continents)) {
+                array_push($continents, $pais->continent);
+            }
+        }
+        return view('main', ['paisos'=>$paisos, 'continents'=>$continents]);
     }
 
     /**

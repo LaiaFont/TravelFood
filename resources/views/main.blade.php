@@ -3,9 +3,15 @@
 @section('content')
     <section>
         <p>Prova vista</p>
-        @foreach ($paisos as $pais) 
-            <h2>{{ $pais->continent}}</h2>
-            <!--<p> {{ $pais->pais_nom }} </p>-->
+        @foreach ($continents as $continent) 
+            <h2>{{ $continent }}</h2>
+            <ul>
+            @foreach ($paisos as $pais)
+                @if ($continent == $pais->continent)
+                    <li> {{ $pais->pais_nom }} </li>
+                @endif
+            @endforeach
+            </ul>
         @endforeach
     </section>
 
