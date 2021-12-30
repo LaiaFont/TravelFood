@@ -1,3 +1,5 @@
+@include('includes.page_head')
+
 @include('layouts.header')
 
 @section('content')
@@ -17,3 +19,4 @@
     @endforeach
 
 @include('layouts.footer')
+@include('includes.page_tail')
