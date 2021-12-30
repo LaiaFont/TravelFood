@@ -2,7 +2,6 @@
 
 @section('content')
     <section>
-        <p>Prova vista</p>
         @foreach ($continents as $continent) 
             <h2>{{ $continent }}</h2>
             <ul>
