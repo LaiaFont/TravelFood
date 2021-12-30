@@ -1,17 +1,19 @@
 @include('layouts.header')
 
 @section('content')
-    <section>
-        @foreach ($continents as $continent) 
-            <h2>{{ $continent }}</h2>
-            <ul>
+    @foreach ($continents as $continent) 
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ $continent }}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             @foreach ($paisos as $pais)
                 @if ($continent == $pais->continent)
-                    <li> {{ $pais->pais_nom }} </li>
+                    <a class="dropdown-item" href="#"> {{ $pais->pais_nom }} </a>
                 @endif
-            @endforeach
-            </ul>
-        @endforeach
-    </section>
+             @endforeach
+        </div> 
+    </div>
+    @endforeach
 
 @include('layouts.footer')
