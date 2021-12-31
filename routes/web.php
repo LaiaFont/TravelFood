@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [\App\Http\Controllers\PaisController::class, 'index'])->name('home'); //show és una funció a dins el controlador
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
