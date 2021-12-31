@@ -10,12 +10,18 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@popperjs/core": "^2.11.0",
         "axios": "^0.21",
+        "bootstrap": "5.1",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "resolve-url-loader": "^4.0.0",
+<<<<<<< HEAD
         "sass": "^1.45.2",
+=======
+        "sass": "^1.45.1",
+>>>>>>> 805c625292837c3da71db94cb945d9553add1067
         "sass-loader": "^12.1.0"
     }
 }
