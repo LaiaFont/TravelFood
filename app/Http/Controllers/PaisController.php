@@ -22,7 +22,13 @@ class PaisController extends Controller
                 array_push($continents, $pais->continent);
             }
         }
-        return view('main', ['paisos'=>$paisos, 'continents'=>$continents]);
+        return view('main', ['continents'=>$continents]);
+    }
+
+    public function showC()
+    {
+        $paisos = Pais::orderBy('pais_nom');
+        return view('detall.continent', ['paisos'=>$paisos]);
     }
 
     /**
