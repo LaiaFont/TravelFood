@@ -1,10 +1,18 @@
 *{
   outline:none!important;
 }
+
 #page-content{
     overflow: hidden;
     position: relative;
     padding-top:86px;
+}
+
+.card {
+    margin: 5px;
+    .card-footer {
+        background-color: #ffddde;
+    }
 }
 
 h2{

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @charset "UTF-8";
 /*!
@@ -11307,7 +11304,8 @@ textarea.form-control-lg {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}*/
+}
+*/
 .card-header {
   background-color: #f5bfc0;
 }
@@ -11342,6 +11340,13 @@ footer .copyright {
   overflow: hidden;
   position: relative;
   padding-top: 86px;
+}
+
+.card {
+  margin: 5px;
+}
+.card .card-footer {
+  background-color: #ffddde;
 }
 
 h2, .h2 {
@@ -11392,4 +11397,3 @@ p, span, a, ul, li {
     line-height: 16px;
   }
 }
->>>>>>> 805c625292837c3da71db94cb945d9553add1067
