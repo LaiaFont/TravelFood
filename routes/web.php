@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\PaisController::class, 'index'])->name('home'); //show és una funció a dins el controlador
 
-Route::get('/africa', [\App\Http\Controllers\PaisController::class, 'showC'])->name('africa'); //show és una funció a dins el controlador
+Route::get('/africa', [\App\Http\Controllers\PaisController::class, 'showC'])->name('Àfrica');
+Route::get('/america', [\App\Http\Controllers\PaisController::class, 'showC'])->name('Amèrica');
+Route::get('/asia', [\App\Http\Controllers\PaisController::class, 'showC'])->name('Àsia');
+Route::get('/europa', [\App\Http\Controllers\PaisController::class, 'showC'])->name('Europa');
+Route::get('/oceania', [\App\Http\Controllers\PaisController::class, 'showC'])->name('Oceania');
 
 
 Route::group(['prefix' => 'admin'], function () {

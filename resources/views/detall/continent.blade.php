@@ -3,9 +3,14 @@
 @include('layouts.header')
 
 @section('content')
+    <h2>
+        {{ Route::current()->getName() }}
+    </h2>
     <div class="content">
         @foreach ($paisos as $pais)
-            <p>{{ $pais->pais_nom }}</p>
+            @if ($pais->continent == Route::current()->getName())
+                <p>{{ $pais->pais_nom }}</p>
+            @endif
         @endforeach
     </div>
 

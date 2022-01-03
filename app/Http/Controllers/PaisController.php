@@ -27,7 +27,7 @@ class PaisController extends Controller
 
     public function showC()
     {
-        $paisos = Pais::orderBy('pais_nom');
+        $paisos = Pais::orderBy('pais_nom')->simplePaginate(10);
         return view('detall.continent', ['paisos'=>$paisos]);
     }
 

@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://www.gourmetkebab.es/wp-content/uploads/2019/09/Kebab-shawarma.jpg" class="d-block w-100" alt="Kibab">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
