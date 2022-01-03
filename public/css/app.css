@@ -11345,6 +11345,10 @@ footer .copyright {
 .card {
   margin: 5px;
 }
+.card img {
+  height: 300px;
+  width: auto;
+}
 .card .card-footer {
   background-color: #ffddde;
 }

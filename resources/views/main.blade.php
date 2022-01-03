@@ -3,9 +3,9 @@
 @include('layouts.header')
 
 @section('content')
-    <div class="card-deck">
-        @foreach ($continents as $continent) 
-                
+    <div class="container">
+        <div class="row">
+            @foreach ($continents as $continent) 
                     <div class="card text-center" style="width: 18rem;">
                         @if ($continent == "Àfrica")
                             <img class="card-img-top" src="https://i.pinimg.com/originals/30/c6/ef/30c6effe70e2baf6e07cdba0c87934a6.gif" alt="Card image cap">
@@ -18,14 +18,15 @@
                         @elseif ($continent == "Oceania")
                             <img class="card-img-top" src="https://www.enchantedlearning.com/bwbig/australia.png" alt="Card image cap">
                         @endif
-                        <div class="card-body flex-fill flex-column">
+                        <div class="card-body">
                             <h5 class="card-footer mt-auto">
                                     {{ $continent }}
                             </h5>
                         </div>
                     </div>
                
-        @endforeach
+            @endforeach
+        </div>
     </div>
     
 
