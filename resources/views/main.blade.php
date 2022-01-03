@@ -9,24 +9,14 @@
                 <div class="card text-center" style="width: 18rem;">
                         @if ($continent == "Àfrica")
                             <a href="/africa">
-                                <img class="card-img-top" src="https://i.pinimg.com/originals/30/c6/ef/30c6effe70e2baf6e07cdba0c87934a6.gif" alt="Card image cap">
-                            </a>
                         @elseif ($continent == "Amèrica")
                             <a href="/america">
-                                <img class="card-img-top" src="https://shop.gfk-geomarketing.de/media/catalog/product/cache/7193213495034ce484d0f8078f0d4fd0/a/m/america_outline_large.png" alt="Card image cap">
-                            </a>
                         @elseif ($continent == "Àsia")
                             <a href="/asia">
-                                <img class="card-img-top" src="https://i.pinimg.com/564x/ee/6b/32/ee6b32bd47274709f42b7bb8c89b57dd--asia-continent-felt-boards.jpg" alt="Card image cap">
-                            </a>
                         @elseif ($continent == "Europa")
                             <a href="/europa">
-                                <img class="card-img-top" src="https://i.pinimg.com/originals/e6/ad/6e/e6ad6ed735972d208ccf824959d7ca44.gif" alt="Card image cap">
-                            </a>
                         @elseif ($continent == "Oceania")
                             <a href="/oceania">
-                                <img class="card-img-top" src="https://www.enchantedlearning.com/bwbig/australia.png" alt="Card image cap">
-                            </a>
                         @endif
                         <div class="card-body">
                             <h5 class="card-footer mt-auto">
@@ -38,6 +28,45 @@
             @endforeach
         </div>
     </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://spanishsabores.com/wp-content/uploads/2020/05/Seafood-Paella-1837-Blog.jpg" class="d-block w-100" alt="Paella">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     
 @include('layouts.footer')
 @include('includes.page_tail')

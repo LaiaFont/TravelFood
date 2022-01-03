@@ -11352,6 +11352,10 @@ footer .copyright {
   background-color: #ffddde;
 }
 
+footer {
+  background-color: #f4f4f4;
+}
+
 h2, .h2 {
   margin-bottom: 15px;
 }
