@@ -28,11 +28,9 @@ nav {
     }
 }
 
-.carousel {
-    img {
-        width: 400px;
-        height: auto;
-    }
+#carousel {
+    width: 50% !important;
+    margin: 50px auto auto;
 }
 
 h2{
