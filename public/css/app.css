@@ -11342,6 +11342,10 @@ footer .copyright {
   padding-top: 86px;
 }
 
+nav {
+  border-bottom: 1px #ffddde solid;
+}
+
 .card {
   margin: 5px;
   border-color: #ffffff;

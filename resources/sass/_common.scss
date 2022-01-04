@@ -8,6 +8,10 @@
     padding-top:86px;
 }
 
+nav {
+    border-bottom: 1px $header-lighter solid;
+}
+
 .card {
     margin: 5px;
     border-color: $white;
