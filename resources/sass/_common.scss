@@ -10,21 +10,14 @@
 
 nav {
     border-bottom: 1px $header-lighter solid;
-}
-
-.card {
-    margin: 5px;
-    border-color: $white;
-    .card-footer{
+    .btn {
         background-color: $header-lighter;
-    }
-}
+        border: $header-lighter;
+        color: $black !important;
 
-.btn{
-    background-color: $header-lighter;
-    border: $header-lighter;
-    .p{
-        color: $black;
+        &:hover {
+            background-color: $verd-clar;
+        }
     }
 }
 

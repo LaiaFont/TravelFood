@@ -11345,21 +11345,13 @@ footer .copyright {
 nav {
   border-bottom: 1px #ffddde solid;
 }
-
-.card {
-  margin: 5px;
-  border-color: #ffffff;
-}
-.card .card-footer {
-  background-color: #ffddde;
-}
-
-.btn {
+nav .btn {
   background-color: #ffddde;
   border: #ffddde;
+  color: #000000 !important;
 }
-.btn .p {
-  color: #000000;
+nav .btn:hover {
+  background-color: #D9E5D6;
 }
 
 #carousel {
