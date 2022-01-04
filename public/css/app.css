@@ -11344,7 +11344,7 @@ footer .copyright {
 
 .card {
   margin: 5px;
-  border-color: white;
+  border-color: #ffffff;
 }
 .card .card-footer {
   background-color: #ffddde;
@@ -11355,7 +11355,7 @@ footer .copyright {
   border: #ffddde;
 }
 .btn .p {
-  color: black;
+  color: #000000;
 }
 
 h2, .h2 {

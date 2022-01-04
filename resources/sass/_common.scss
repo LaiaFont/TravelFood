@@ -10,16 +10,16 @@
 
 .card {
     margin: 5px;
-    border-color: white;
+    border-color: $white;
     .card-footer{
-        background-color: #ffddde;
+        background-color: $header-lighter;
     }
 }
 .btn{
-    background-color: #ffddde;
-    border: #ffddde;
+    background-color: $header-lighter;
+    border: $header-lighter;
     .p{
-        color: black;
+        color: $black;
     }
 }
 
