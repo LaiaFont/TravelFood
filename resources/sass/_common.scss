@@ -19,11 +19,19 @@ nav {
         background-color: $header-lighter;
     }
 }
+
 .btn{
     background-color: $header-lighter;
     border: $header-lighter;
     .p{
         color: $black;
+    }
+}
+
+.carousel {
+    img {
+        width: 400px;
+        height: auto;
     }
 }
 
