@@ -12,9 +12,10 @@ class CiutatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $ciutats = Ciutat::orderBy('pais_id')->simplePaginate(10);       
+        return view('detall.pais', ['ciutats'=>$ciutats, 'id'=>$request->route('id')]);
     }
 
     /**

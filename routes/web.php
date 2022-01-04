@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\PaisController::class, 'index'])->name('home'); //show és una funció a dins el controlador
 
+Route::get('/{id}', [\App\Http\Controllers\CiutatController::class, 'index'])->name('detall'); //show és una funció a dins el controlador
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

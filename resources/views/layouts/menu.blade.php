@@ -14,7 +14,7 @@
                     <ul class = "dropdown-menu" aria-labelledby="dropdownMenuButton">
                         @foreach ($paisos as $pais)
                             @if ($pais->continent == $continent)
-                                <li><a class="dropdown-item" href="#"> {{ $pais->pais_nom }} </a></li>
+                                <li><a class="dropdown-item" href="{{ $pais->id }}"> {{ $pais->pais_nom }} </a></li>
                             @endif
                         @endforeach
                     </ul>       
