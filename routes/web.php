@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\PaisController::class, 'index'])->name('home'); //index és una funció a dins el controlador
 
 Route::get('/{id}', [\App\Http\Controllers\CiutatController::class, 'index'])->name('detall');
+Route::get('/{id}', [\App\Http\Controllers\CiutatController::class, 'index'])->name('detall');
 
 
 Route::group(['prefix' => 'admin'], function () {
