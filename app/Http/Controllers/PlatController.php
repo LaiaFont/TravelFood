@@ -12,9 +12,16 @@ class PlatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    private $repository;
+    public function __construct(DataController $repository)
+    {
+        $this->repository = $repository;
+    }
+
     public function index()
     {
-        //
+        
     }
 
     /**
