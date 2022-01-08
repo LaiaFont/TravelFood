@@ -67,141 +67,171 @@ class DatabaseSeeder extends Seeder
         //espanya
         DB::table('ciutat')->insert([
             'ciutat_nom'=>'Madrid',
+            'imatge_url'=>'https://upload.wikimedia.org/wikipedia/commons/4/44/Plaza_Mayor_de_Madrid_06.jpg',
             'pais_id'=>1
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=>'València',
+            'imatge_url'=>'https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2020/01/15165921/Aerial-panoramic-view-of-the-old-town-in-Valencia-from-Santa-Caterina-tower.jpg',
             'pais_id'=>1
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=>'Barcelona',
+            'imatge_url'=>'https://img.static-af.com/images/meta/IDname/CITY-BCN-1?aspect_ratio=2:1&max_width=1920',
             'pais_id'=>1
         ]);
         
         //itàlia
         DB::table('ciutat')->insert([
             'ciutat_nom'=>'Toscana',
+            'imatge_url'=>'https://www.viajarflorencia.com/wp-content/uploads/visitar-cinque-terre-italia.jpg',
             'pais_id'=>2
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=>'Nàpols',
+            'imatge_url'=>'https://www.mutuam.cat/wp-content/uploads/2015/06/napols-1.jpg',
             'pais_id'=>2
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=>'Florència',
+            'imatge_url'=>'https://www.lavanguardia.com/files/image_449_220/uploads/2017/11/20/5fa3decd68344.jpeg',
             'pais_id'=>2
         ]);
 
         //xina
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Shanghái',
+            'imatge_url'=>'https://viajaresparasiempre.com/wp-content/uploads/2019/10/shangai-paseos-inolvidables.jpg',
             'pais_id'=>3
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Pekín',
+            'imatge_url'=>'https://elviajerofeliz.com/wp-content/uploads/2018/12/que-ver-en-pekin.jpg',
             'pais_id'=>3
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Tianjin',
+            'imatge_url'=>'https://digital.ihg.com/is/image/ihg/holiday-inn-tianjin-6132698998-4x3',
             'pais_id'=>3
         ]);
 
         //tailandia
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Bankok',
+            'imatge_url'=>'https://dondealojarse.net/wp-content/uploads/2019/11/bangkok.jpg',
             'pais_id'=>4
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Ratchaburi',
+            'imatge_url'=>'https://mediaim.expedia.com/destination/2/dcd305e781749df294ead18175892b6d.jpg',
             'pais_id'=>4
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Pai-Mae Hong Son',
+            'imatge_url'=>'http://static.asiawebdirect.com/m/phuket/portals/thaiwave-com/shared/teasersL/mae-hong-son/teaserMultiLarge/imageHilight/mae-hong-son.jpg',
             'pais_id'=>4
         ]);
 
         //australia
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Sydney',
+            'imatge_url'=>'https://media-cdn.tripadvisor.com/media/photo-s/1c/e3/6f/80/hotel-exterior-night.jpg',
             'pais_id'=>5
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Melbourne',
+            'imatge_url'=>'https://wp-growpro.s3-eu-west-1.amazonaws.com/media/2018/03/Que-ver-en-Melbourne.jpg',
             'pais_id'=>5
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Canberra',
+            'imatge_url'=>'https://estaticos.muyhistoria.es/uploads/images/article/591033945bafe8e2443c986b/canberra-c.jpg',
             'pais_id'=>5
         ]);
 
         //russia
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Moscou',
+            'imatge_url'=>'https://www.petitfute.es/medias/mag/11779/835/225851-le-musee-historique-d-etat.jpg',
             'pais_id'=>6
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Sant Petersburg',
+            'imatge_url'=>'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6f/68/63.jpg',
             'pais_id'=>6
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Iekaterinburg',
+            'imatge_url'=>'https://yekaterinburgtimes.com/wp-content/uploads/2018/04/1.0-DSC_8363-777x437.jpg',
             'pais_id'=>6
         ]);
 
         //mexic
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Ciudad de México',
+            'imatge_url'=>'https://www.barcelo.com/pinandtravel/wp-content/uploads/2018/09/Apertura1-25-1170x532.jpg',
             'pais_id'=>7
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Tijuana',
+            'imatge_url'=>'https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2017-10/guia-tijuana.jpg',
             'pais_id'=>7
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Guadalajara',
+            'imatge_url'=>'https://cdn.pixabay.com/photo/2019/10/19/20/44/guadalajara-4562248__480.jpg',
             'pais_id'=>7
         ]);
 
         //argentina
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Buenos Aires',
+            'imatge_url'=>'https://www.cronista.com/files/image/352/352344/61251b22add52.jpg',
             'pais_id'=>8
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Córdoba',
+            'imatge_url'=>'https://pymstatic.com/74245/conversions/psicologos-cordoba-argentina-default.jpg',
             'pais_id'=>8
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Salta',
+            'imatge_url'=>'https://www.adonde-y-cuando.es/site/images/illustration/oualler/-salta.jpg',
             'pais_id'=>8
         ]);
 
         //egipte
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Luxor',
+            'imatge_url'=>'https://egiptoexclusivo.com/wp-content/uploads/2020/12/faraon-ramses-ii-templo-luxor.jpg',
             'pais_id'=>9
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Alexandria',
+            'imatge_url'=>'https://mediaim.expedia.com/destination/1/8d54c706395bb3567b503830e06197ba.jpg',
             'pais_id'=>9
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'El Caire',
+            'imatge_url'=>'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
             'pais_id'=>9
         ]);
 
         //senegal
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Senegal',
-            'pais_id'=>9
+            'imatge_url'=>'https://www.afd.fr/sites/afd/files/styles/visuel_principal/public/2020-12-08-22-52/ville-senegal-tremeau.jpg?itok=qDIKpH9Z',
+            'pais_id'=>10
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Saint-Louis',
-            'pais_id'=>9
+            'imatge_url'=>'https://ep01.epimg.net/elviajero/imagenes/2019/02/14/actualidad/1550135880_329066_1550167688_noticia_fotograma.jpg',
+            'pais_id'=>10
         ]);
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Rufisque',
-            'pais_id'=>9
+            'imatge_url'=>'https://static.smarttravelapp.com/data/pois/5380_Rufisque3_1480406561.jpg',
+            'pais_id'=>10
         ]);
         
         //PLATS

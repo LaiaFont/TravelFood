@@ -21,6 +21,15 @@ nav {
     }
 }
 
+
+.card {
+    .card-img {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+}
+
 #carousel {
     width: 50% !important;
     margin: 50px auto auto;

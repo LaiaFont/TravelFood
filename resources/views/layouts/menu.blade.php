@@ -6,13 +6,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
             <ul class="navbar-nav">
-                @foreach ($continents as $continent) 
+                @foreach ($data['continents'] as $continent) 
                 <li class="nav-item dropdown">
                     <a class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
                         {{ $continent }}
                     </a>
                     <ul class = "dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        @foreach ($paisos as $pais)
+                        @foreach ($data['paisos'] as $pais)
                             @if ($pais->continent == $continent)
                                 <li><a class="dropdown-item" href="{{ $pais->id }}"> {{ $pais->pais_nom }} </a></li>
                             @endif
