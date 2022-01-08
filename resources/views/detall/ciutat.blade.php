@@ -5,12 +5,12 @@
 
 @section('content')
 <div class="card-group mt-3">
-    @foreach ($ciutats as $ciutat)
+    @foreach ($plats as $plat)
         <div class="card" style="width: 18rem;">
-            <a href="{{ $ciutat->pais_id }}/{{ $ciutat->id }}">
-                <img class="card-img" src="{{ $ciutat->imatge_url }}" alt="Card image">
+            <a href="/{{ $plat->id }}">
+                <img class="card-img" src="{{ $plat->imatge_url }}" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $ciutat->ciutat_nom }}</h5>
+                    <h5 class="card-title">{{ $plat->plat_id }}</h5>
                 </div>
             </a>
         </div>

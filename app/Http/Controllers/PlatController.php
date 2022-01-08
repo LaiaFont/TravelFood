@@ -19,9 +19,11 @@ class PlatController extends Controller
         $this->repository = $repository;
     }
 
-    public function index()
+    public function index(Request $request, DataController $repository)
     {
+        $plats = Plat::where('id', '=', $request->route('id'))->paginate(10);       
         
+        return view('detall.ciutat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
     }
 
     /**

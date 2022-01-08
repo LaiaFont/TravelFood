@@ -9,7 +9,7 @@ class Plat extends Model
 {
     protected $table="plat";
     public function ciutat() {
-        return $this->belongsTo('App\Models\Ciutat');
+        return $this->belongsToMany('App\Models\Ciutat', 'ciutat_plat', 'plat_id', 'ciutat_id');
     }
 
     public function ingredients() {
