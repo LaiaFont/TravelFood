@@ -22,9 +22,16 @@ class CiutatController extends Controller
 
     public function index(Request $request, DataController $repository)
     {
-        $ciutats = Ciutat::where('pais_id', '=', $request->route('id'))->paginate(10);       
+        $ciutats = Ciutat::where('pais_id', '=', $request->route('id'))->paginate(10);   
         
         return view('detall.pais', ['ciutats'=>$ciutats, 'data'=>$this->repository->getData()]);
+    }
+
+    public function showP(Request $request, DataController $repository)
+    {
+        $plats = Ciutat::find($request->route('ciutat_id'))->plat;       
+        
+        return view('detall.ciutat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
     }
 
     /**
