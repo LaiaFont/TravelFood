@@ -13,6 +13,6 @@ class Ciutat extends Model
     }
 
     public function plat() {
-        return $this->belongsToMany('App\Models\Pais', 'ciutat_plat', 'ciutat_id', 'plat_id');
+        return $this->belongsToMany('App\Models\Plat', 'ciutat_plat', 'ciutat_id', 'plat_id');
     }
 }

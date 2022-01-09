@@ -21,6 +21,13 @@ class PlatController extends Controller
 
     public function index(Request $request, DataController $repository)
     {
+        $plats = Plat::with('ciutat')->get();       
+        
+        return view('detall.ciutat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
+    }
+
+    public function showP(Request $request, DataController $repository)
+    {
         $plats = Plat::find($request->route('ciutat_id'));       
         
         return view('detall.ciutat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
