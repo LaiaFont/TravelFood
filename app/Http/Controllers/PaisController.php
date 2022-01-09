@@ -12,17 +12,17 @@ class PaisController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    private $repository;
+
+    public function __construct(DataController $repository) //controlador per passar les dades del menu d'una view a una altre
+    {
+        $this->repository = $repository;
+    }
+
     public function index()
     {
-        $continents = [];
-        //Envia tots els paisos ordenats per continent
-        $paisos = Pais::orderBy('continent')->simplePaginate(10);
-        foreach ($paisos as $pais) {
-            if (!in_array($pais->continent, $continents)) {
-                array_push($continents, $pais->continent);
-            }
-        }
-        return view('main', ['paisos'=>$paisos, 'continents'=>$continents]);
+        return view('main', ['data'=>$this->repository->getData()]);
     }
 
     /**

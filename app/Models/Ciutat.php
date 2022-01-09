@@ -11,4 +11,8 @@ class Ciutat extends Model
     public function pais() {
         return $this->belongsTo('App\Models\Pais');
     }
+
+    public function plat() {
+        return $this->belongsToMany('App\Models\Plat', 'ciutat_plat', 'ciutat_id', 'plat_id');
+    }
 }
