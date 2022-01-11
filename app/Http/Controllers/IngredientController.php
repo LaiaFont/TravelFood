@@ -2,27 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pais;
+use App\Models\Ingredient;
 use Illuminate\Http\Request;
 
-class PaisController extends Controller
+class IngredientController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-    private $repository;
-
-    public function __construct(DataController $repository) //controlador per passar les dades del menu d'una view a una altre
-    {
-        $this->repository = $repository;
-    }
-
     public function index()
     {
-        return view('main', ['data'=>$this->repository->getData(), 'plats'=>$this->repository->getPlats()]);
+        //
     }
 
     /**
@@ -49,21 +41,21 @@ class PaisController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Ingredient  $ingredient
      * @return \Illuminate\Http\Response
      */
-    public function show(Pais $paisos)
+    public function show(Ingredient $ingredient)
     {
-        
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Ingredient  $ingredient
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pais $pais)
+    public function edit(Ingredient $ingredient)
     {
         //
     }
@@ -72,10 +64,10 @@ class PaisController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Ingredient  $ingredient
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pais $pais)
+    public function update(Request $request, Ingredient $ingredient)
     {
         //
     }
@@ -83,10 +75,10 @@ class PaisController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Ingredient  $ingredient
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pais $pais)
+    public function destroy(Ingredient $ingredient)
     {
         //
     }

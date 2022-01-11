@@ -11369,6 +11369,10 @@ nav .btn:hover {
   margin: 25px 0;
 }
 
+.plat.img-fluid {
+  width: 50%;
+}
+
 h2, .h2 {
   margin-bottom: 15px;
 }

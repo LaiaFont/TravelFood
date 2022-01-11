@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pais;
+use App\Models\Plat;
 
 class DataController {
     public function getData()
@@ -16,7 +17,12 @@ class DataController {
                 array_push($data['continents'], $pais->continent);
             }
         }
+        return $data;
+    }
 
+    public function getPlats() {
+        $data = [];
+        $data['plats'] = Plat::inRandomOrder('nom')->simplePaginate(3);
         return $data;
     }
 }

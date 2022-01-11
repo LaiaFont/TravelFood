@@ -12,7 +12,7 @@ class Plat extends Model
         return $this->belongsToMany('App\Models\Ciutat', 'ciutat_plat', 'plat_id', 'ciutat_id');
     }
 
-    public function ingredients() {
-        return $this->hasMany('App\Models\Ingredients');
+    public function ingredient() {
+        return $this->belongsToMany('App\Models\Ingredient', 'ingredients_plat', 'plat_id', 'ingredient_id');
     }
 }
