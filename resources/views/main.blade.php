@@ -13,24 +13,24 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="https://spanishsabores.com/wp-content/uploads/2020/05/Seafood-Paella-1837-Blog.jpg" class="d-block w-100" alt="Paella">
+        <img src="{{ $plats['plats'][0]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][0]->nom }}">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Paella</h5>
-          <p>Spanish Dish</p>
+          <h5>{{ $plats['plats'][0]->nom }}</h5>
+          <p>{{ $plats['plats'][0]->descripcio }}</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="https://www.hogarmania.com/archivos/201411/bocadillo-calamares-xl-668x400x80xX.jpg" class="d-block w-100" alt="Bocadillo de Calamares">
+        <img src="{{ $plats['plats'][1]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][1]->nom }}">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Bocadillo de calamares</h5>
-          <p>Madrid food</p>
+          <h5>{{ $plats['plats'][1]->nom }}</h5>
+          <p>{{ $plats['plats'][1]->descripcio }}</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://www.gourmetkebab.es/wp-content/uploads/2019/09/Kebab-shawarma.jpg" class="d-block w-100" alt="Kebab">
+        <img src="{{ $plats['plats'][2]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][2]->nom }}">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Kebab</h5>
-          <p>Kibab typical</p>
+          <h5>{{ $plats['plats'][2]->nom }}</h5>
+          <p>{{ $plats['plats'][2]->descripcio }}</p>
         </div>
       </div>
     </div>

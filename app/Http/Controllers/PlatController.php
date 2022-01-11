@@ -21,16 +21,9 @@ class PlatController extends Controller
 
     public function index(Request $request, DataController $repository)
     {
-        $plats = Plat::where('nom', '=', $request->route('plat_nom'))->paginate(10);       
+        $plats = Plat::with('ingredient')->where('id', '=', $request->route('plat_id'))->get();       
         
         return view('detall.plat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
-    }
-
-    public function showP(Request $request, DataController $repository)
-    {
-        $plats = Plat::find($request->route('ciutat_id'));       
-        
-        return view('detall.ciutat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
     }
 
     /**
