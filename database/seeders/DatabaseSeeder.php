@@ -377,6 +377,57 @@ class DatabaseSeeder extends Seeder
             'descripcio'=> "Les picades més simples porten formatge, pernil cuit, salami, olives i patates fregits o blat de moro, però poden portar gairebé de tot: mortadel·la, truita de patates, salsitxes, falafel, anxoves…"
         ]);
 
+        DB::table('plat')->insert([
+            'nom'=> 'Alfajores',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "Aquesta mena de galetes farcides són un menjar típic argentí que s'ha estès a molts altres llocs del món. Poden portar el farcit que més t'agradi (mel, fruita…) encara que els més demanats són els de dolç de llet."
+        ]);
+        DB::table('plat')->insert([
+            'nom'=> 'Empanadas Salteñas',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "Les empanades saltenyes es destaquen perquè contenen com a ingredient diferencial la patata i la carn es talla a ganivet. Es poden fer fregides o al forn."
+        ]);
+
+        //Egipte
+        DB::table('plat')->insert([
+            'nom'=> 'Ful Medames',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "Un xut d'energia que has de provar almenys una vegada (aquí se sol menjar d'esmorzar). Les faves són les grans protagonistes del plat. No és estrany que per menjar-les també et serveixin pa de pita."
+        ]);
+
+        DB::table('plat')->insert([
+            'nom'=> 'Mezze',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "Els entrants freds o aperitius són molt populars en aquesta ciutat egípcia. Solen servir-se principalment en petits atuells o recipients."
+        ]);
+
+        
+        DB::table('plat')->insert([
+            'nom'=> 'Koftas',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "Aquest menjar típic del Caire i d'Egipte en general són unes boles de carn de vedella i xai amb espècies, que tradicionalment es presenten en forma de kebab."
+        ]);
+
+        //Senegal
+        DB::table('plat')->insert([
+            'nom'=> 'Maafe',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "Es tracta d'un dels guisats més exquisits que tastaràs, sobretot si ets amant del cacauet. És conegut com a guisat de cacauet i és popular en una gran quantitat de països, és un platet típic d'Àfrica Occidental i Àfrica Central."
+        ]);
+
+        DB::table('plat')->insert([
+            'nom'=> 'Thieboudienne',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "El thieboudienne és un plat de tipus been cin, on tots els ingredients es preparen en una mateixa marmita. El peix pot ser de diferents tipus, juntament amb l'arròs i el tomàquet, els ingredients poden variar d'un lloc a un altre."
+        ]);
+
+        DB::table('plat')->insert([
+            'nom'=> 'Fataya',
+            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'descripcio'=> "Són crestes de carn o peix amb ceba, tomàquet i pebre, mateixes que són acompanyades d'una salsa picant per “remullar-se”."
+        ]);
+
+
         //CATEGORIES
         DB::table('categoria')->insert([
             'categoria_nom' =>'Verdures'
@@ -435,6 +486,111 @@ class DatabaseSeeder extends Seeder
         DB::table('ciutat_plat')->insert([
             'ciutat_id' => 3,
             'plat_id' => 4
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 4,
+            'plat_id' => 5
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 5,
+            'plat_id' => 6
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 6,
+            'plat_id' => 7
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 7,
+            'plat_id' => 8
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 8,
+            'plat_id' => 9
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 9,
+            'plat_id' => 10
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 10,
+            'plat_id' => 11
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 11,
+            'plat_id' => 12
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 12,
+            'plat_id' => 13
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 13,
+            'plat_id' => 14
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 14,
+            'plat_id' => 15
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 15,
+            'plat_id' => 16
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 16,
+            'plat_id' => 17
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 17,
+            'plat_id' => 18
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 18,
+            'plat_id' => 19
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 19,
+            'plat_id' => 20
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 20,
+            'plat_id' => 21
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 21,
+            'plat_id' => 22
+        ]);
+
+        
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 22,
+            'plat_id' => 23
         ]);
 
         //INGREDIENT-PLAT
