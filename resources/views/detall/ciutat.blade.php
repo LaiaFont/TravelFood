@@ -5,8 +5,10 @@
 
 @section('content')
 @foreach ($ciutats as $ciutat)
-    <h1 class="ciutat">{{ $ciutat->ciutat_nom }}</h1>
-    <div class="lightbox">
+    <div class="row">
+        <h1 class="col-lg-6">{{ $ciutat->ciutat_nom }}</h1>
+    </div>
+    <div class="row">
         @foreach ($ciutat->plat as $plat) 
             <div class="col-lg-6" style="width: 18rem;">
                 <a href=""> <!--ruta que anira a detall plat-->
