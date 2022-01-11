@@ -11,7 +11,8 @@
     <div class="row">
         @foreach ($ciutat->plat as $plat) 
             <div class="col-lg-6" style="width: 18rem;">
-                <a href=""> <!--ruta que anira a detall plat-->
+                
+                <a href="{{ route('plat',[strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $ciutat->ciutat_nom)),  strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $plat->nom)) ]) }}"> <!--ruta que anira a detall plat-->
                     <img class="card-img" src="{{ $plat->imatge_url }}" alt="Card image">
                     <div class="card-body">
                         <h5 class="card-title">{{ $plat->nom }}</h5>
