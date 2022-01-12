@@ -430,21 +430,160 @@ class DatabaseSeeder extends Seeder
 
         //CATEGORIES
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Verdures'
+            'categoria_nom' =>'Verdures' //1
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Carn'
+            'categoria_nom' =>'Carn' //2
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Marisc'
+            'categoria_nom' =>'Marisc' //3
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Llegums' //4
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Pasta' //5
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Làctics' //6
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Condiments' //7
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Cereals' //8
+        ]);
+
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Líquids' //9
         ]);
 
         //INGREDIENTS
         DB::table('ingredient')->insert([
             'ingredient_nom' => 'Pa',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'All',
             'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Ceba',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Oli d'oliva",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Sal",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Pebre Negre",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Tomaques",
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Mantega",
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Porc",
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Salsa de soja",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Mel",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Pebre blanc",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Aigua",
+            'categoria_id' => 9
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Llagostins",
+            'categoria_id' => 3
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Ous",
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Salsa de Soja negre",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Patates",
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Llimona",
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Farigola",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Vinagre",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Farina",
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Llevadura",
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Xampinyons",
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Julibert",
+            'categoria_id' => 7
         ]);
 
         DB::table('ingredient')->insert([
