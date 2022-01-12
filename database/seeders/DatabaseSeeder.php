@@ -443,6 +443,11 @@ class DatabaseSeeder extends Seeder
 
         //INGREDIENTS
         DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pa',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
             'ingredient_nom' => 'Pastanaga',
             'categoria_id' => 1
         ]);
