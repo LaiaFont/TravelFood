@@ -26,3 +26,7 @@ Route::get('/{ciutat_nom}/plat/{plat_id}', [\App\Http\Controllers\PlatController
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
