@@ -13,21 +13,27 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="{{ $plats['plats'][0]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][0]->nom }}">
+        <a href="{{ route('plat',[strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $plats['plats'][0]->ciutat[0]->ciutat_nom)), $plats['plats'][0]->id]) }}">
+          <img src="{{ $plats['plats'][0]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][0]->nom }}">
+        </a>
         <div class="carousel-caption d-none d-md-block">
           <h5>{{ $plats['plats'][0]->nom }}</h5>
           <p>{{ $plats['plats'][0]->descripcio }}</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="{{ $plats['plats'][1]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][1]->nom }}">
+        <a href="{{ route('plat',[strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $plats['plats'][1]->ciutat[0]->ciutat_nom)), $plats['plats'][1]->id]) }}">
+          <img src="{{ $plats['plats'][1]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][1]->nom }}">
+        </a>
         <div class="carousel-caption d-none d-md-block">
           <h5>{{ $plats['plats'][1]->nom }}</h5>
           <p>{{ $plats['plats'][1]->descripcio }}</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="{{ $plats['plats'][2]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][2]->nom }}">
+        <a href="{{ route('plat',[strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $plats['plats'][2]->ciutat[0]->ciutat_nom)), $plats['plats'][2]->id]) }}">
+          <img src="{{ $plats['plats'][2]->imatge_url }}" class="d-block w-100" alt="{{ $plats['plats'][2]->nom }}">
+        </a>
         <div class="carousel-caption d-none d-md-block">
           <h5>{{ $plats['plats'][2]->nom }}</h5>
           <p>{{ $plats['plats'][2]->descripcio }}</p>
