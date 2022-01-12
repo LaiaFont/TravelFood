@@ -11403,6 +11403,16 @@ nav .btn:hover {
   filter: brightness(0.4);
 }
 
+.informacio {
+  margin: 10px;
+}
+.informacio h3, .informacio .h3 {
+  margin-bottom: 10px;
+}
+.informacio p {
+  padding: 10px 0;
+}
+
 h2, .h2 {
   margin-bottom: 15px;
 }
