@@ -593,6 +593,46 @@ class DatabaseSeeder extends Seeder
             'plat_id' => 23
         ]);
 
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 23,
+            'plat_id' => 24
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 24,
+            'plat_id' => 25
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 25,
+            'plat_id' => 26
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 26,
+            'plat_id' => 27
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 27,
+            'plat_id' => 28
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 28,
+            'plat_id' => 29
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 29,
+            'plat_id' => 30
+        ]);
+
+        DB::table('ciutat_plat')->insert([
+            'ciutat_id' => 30,
+            'plat_id' => 31
+        ]);
+
         //INGREDIENT-PLAT
         DB::table('ingredients_plat')->insert([
             'ingredient_id' => 5,
