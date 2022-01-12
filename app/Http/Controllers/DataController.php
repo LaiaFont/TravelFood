@@ -22,7 +22,7 @@ class DataController {
 
     public function getPlats() {
         $data = [];
-        $data['plats'] = Plat::inRandomOrder('nom')->simplePaginate(3);
+        $data['plats'] = Plat::inRandomOrder('nom')->with('ciutat')->simplePaginate(3);
         return $data;
     }
 }
