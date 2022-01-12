@@ -417,7 +417,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('plat')->insert([
             'nom'=> 'Thieboudienne',
-            'imatge_url'=> 'https://www.vueltaalmundosabrosa.com/wp-content/uploads/2017/01/DSC_0430-981x640.jpg',
+            'imatge_url'=> 'https://www.internationalcuisine.com/wp-content/uploads/2019/08/Thieboudienne-500x500.jpeg',
             'descripcio'=> "El thieboudienne és un plat de tipus been cin, on tots els ingredients es preparen en una mateixa marmita. El peix pot ser de diferents tipus, juntament amb l'arròs i el tomàquet, els ingredients poden variar d'un lloc a un altre."
         ]);
 

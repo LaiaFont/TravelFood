@@ -5,8 +5,10 @@
 
 @section('content')
 @foreach ($plats as $plat)
-    <img class="img-fluid plat" src="{{ $plat->imatge_url }}">
-    <h1> {{ $plat->nom }} </h1>
+    <div class="img-container">
+        <h1> {{ $plat->nom }} </h1>
+        <img class="img plat" src="{{ $plat->imatge_url }}">
+    </div>
     <h3> Ingredients </h3>
     @foreach ($plat->ingredient as $ingredient) <!--afegir img a icone-->
         {{ $ingredient->ingredient_nom }}

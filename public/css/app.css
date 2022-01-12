@@ -11355,8 +11355,21 @@ nav .btn:hover {
 }
 
 #carousel {
-  width: 50% !important;
   margin: 50px auto auto;
+}
+#carousel .carousel-indicators {
+  margin-left: 20% !important;
+}
+#carousel img {
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#carousel .carousel-caption h5, #carousel .carousel-caption .h5 {
+  color: #ffffff;
+}
+#carousel .carousel-caption p {
+  color: #ffffff;
 }
 
 .row .card-img {
@@ -11369,8 +11382,25 @@ nav .btn:hover {
   margin: 25px 0;
 }
 
-.plat.img-fluid {
-  width: 50%;
+.img-container {
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+.img-container h1, .img-container .h1 {
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.img-container .plat.img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.4);
 }
 
 h2, .h2 {
