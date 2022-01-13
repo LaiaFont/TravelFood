@@ -2,6 +2,10 @@
   outline:none!important;
 }
 
+body {
+    padding-bottom: 70px;
+}
+
 nav {
     border-bottom: 1px $header-lighter solid;
     .btn {

@@ -11335,6 +11335,10 @@ footer .copyright {
   outline: none !important;
 }
 
+body {
+  padding-bottom: 70px;
+}
+
 nav {
   border-bottom: 1px #ffddde solid;
 }
