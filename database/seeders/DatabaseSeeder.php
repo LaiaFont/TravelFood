@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 
+use function Ramsey\Uuid\v1;
 
 //User: ddb179363 Pass: Admin1234
 class DatabaseSeeder extends Seeder
@@ -239,12 +240,12 @@ class DatabaseSeeder extends Seeder
         //Espanya
         DB::table('plat')->insert([
             'nom'=> 'Bocadillo de Calamares',
-            'imatge_url'=> 'https://www.hogarmania.com/archivos/201411/bocadillo-calamares-xl-668x400x80xX.jpg',
+            'imatge_url'=> 'https://media.timeout.com/images/105764007/image.jpg',
             'descripcio'=> "Els entrepans de calamars autèntics de la cuina madrilenya, podem dir que són part d'un plat estrany tractant-se de l'interior d'Espanya, però del que sí que estem segurs és que el plat està boníssim i no te'n pots anar de Madrid sense abans tastar-lo."
         ]);
         DB::table('plat')->insert([
             'nom'=> 'Paella Valenciana',
-            'imatge_url'=> 'https://spanishsabores.com/wp-content/uploads/2020/05/Seafood-Paella-1837-Blog.jpg',
+            'imatge_url'=> 'https://www.comedera.com/wp-content/uploads/2015/06/paella-3397457_1280.jpg',
             'descripcio'=> "Es tracta d'una recepta a base d'arròs, que s'elabora en una paella que es posen ingredients com el pollastre, el conill, el garrofó, mongeta tendra, el safrà i altres ingredients."
         ]);
         DB::table('plat')->insert([
@@ -254,25 +255,25 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('plat')->insert([
             'nom'=> 'Pa amb tomàquet',
-            'imatge_url'=> 'https://cdn02.visitbarcelona.com/files/11116-3-imagen/pa-tomaquet-recepta-gastronomia-catalunya-enjoy-c1b.jpg',
+            'imatge_url'=> 'https://filesedc.com/uploads/cuina/lr/201109/IMG_4559.JPG',
             'descripcio'=> "Típic plat català el qual es pot menjar amb molts tipus d'aliments i en molts àpats."
         ]);
 
         //Italia
         DB::table('plat')->insert([
             'nom'=> 'Filet Florentí',
-            'imatge_url'=> 'https://italian-traditions.com/wp-content/uploads/2018/07/fiorentina-2.jpg',
+            'imatge_url'=> 'https://cdn.pixabay.com/photo/2016/05/10/10/43/rib-1383427_960_720.jpg',
             'descripcio'=> "Es prepara ruixant tots dos costats de la carn amb unes gotes d'oli d'oliva. Després es cuina a la graella i es rosteix a les brases fins a la cocció desitjada."
         ]);
         DB::table('plat')->insert([
             'nom'=> 'Pizza Napolitana',
-            'imatge_url'=> 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg',
+            'imatge_url'=> 'https://casamodena.es/wp-content/uploads/2019/03/26.03.-casa.png',
             'descripcio'=> "No es pot discutir que la pizza napolitana és la millor d'Itàlia. Les seves dues especialitats són la margarida, amb tomàquet, alfàbrega i oli; i la marinera, amb oli d'oliva, tomàquet, all i orenga. A més, la massa de les pizzes napolitanes és més fina."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Crostini di Fegato',
-            'imatge_url'=> 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/239104.jpg',
+            'imatge_url'=> 'https://www.ricetteperbimby.it/foto-ricette/crostini-di-fegatini-toscani-bimby.jpg',
             'descripcio'=> "Un antipasto florentí molt típic són els crostini di fegato, que consisteix en pa fregit coberts en una barreja de fetge (vedella, pollastre, oca, ànec…) barrejades amb anxoves picades, ceba i tàperes."
         ]);
 
@@ -280,19 +281,19 @@ class DatabaseSeeder extends Seeder
 
         DB::table('plat')->insert([
             'nom'=> 'Cerdo asado rojo',
-            'imatge_url'=> 'https://us.123rf.com/450wm/watthano/watthano1409/watthano140900006/31424782-cerdo-rojo-asado-con-salsa-la-cocina-china.jpg?ver=6',
+            'imatge_url'=> 'https://ecucuba.com/wp-content/uploads/2021/08/chinese-five-spice-roast-pork-103754-1.jpeg',
             'descripcio'=> "El color característic d'aquest plat és donat per una salsa de soja amb sucre i una pasta de mongetes amb què es cuina el porc. Pots trobar aquest menjar típic tant en parades de carrer com als millors restaurants de Xangai."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Hot Pot',
-            'imatge_url'=> 'https://www.cocinista.es/download/bancorecursos/recetas/receta-olla-china-hotpot.jpg',
+            'imatge_url'=> 'https://images.ecestaticos.com/seQonrbopoalwJJKAa9hDqjbdcM=/1x110:2120x1301/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F777%2F0ad%2F737%2F7770ad737389803c8588948ad97d7183.jpg',
             'descripcio'=> "El seu nom fa referència al mode de preparació i com se serveix aquest menjar típic: en una olla calenta i al centre de la taula. Cada comensal fica els seus trossos de carn, peix i verdura a l'olla perquè es vagi fent."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Empanades Goubuli',
-            'imatge_url'=> 'https://i.pinimg.com/originals/5e/ec/54/5eec54c2f4163de7ee98e75e99eee442.jpg',
+            'imatge_url'=> 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Baozi_Chengdu.JPG/1200px-Baozi_Chengdu.JPG',
             'descripcio'=> "És la marca tradicional i representativa dels entrepans de Tianjin. A més dels sabors tradicionals, Goubuli ha afegit variants com les empanades de Perla, de Drac i Fènix, les empanades de marisc, entre d'altres."
         ]);
 
@@ -305,26 +306,26 @@ class DatabaseSeeder extends Seeder
 
         DB::table('plat')->insert([
             'nom'=> 'Khao Pad Saparod',
-            'imatge_url'=> 'https://i1.wp.com/elcalderoviajero.com/wp-content/uploads/2017/12/arroz-frito-con-pi%C3%B1a-tailandes-10.jpg?fit=750%2C498&ssl=1',
+            'imatge_url'=> 'https://revistaconecta.es/wp-content/uploads/2020/12/Arroz-frito-con-pin%CC%83aFeat1-1.jpg',
             'descripcio'=> "A més del Pad Thai, el Khao Pad Saparod és el típic plat que us agradarà a gairebé tots. Es tracta d'arròs fregit amb gambes o pollastre, pinya, ou, anacards, panses i salsa de peix. Es fa amb curri en pols així que també té un toc de gust de curri."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Pad Siuw',
-            'imatge_url'=> 'https://www.196flavors.com/wp-content/uploads/2017/05/pad-see-ew-6-FP.jpg',
+            'imatge_url'=> 'https://speisekarte.menu/storage/media/dishes_main/1297527/img-9121-1531910292.jpg',
             'descripcio'=> "És un plat de fideus saltejats amb pollastre, ou, pebre, all i fet amb salsa d'ostres. Els fideus són més grans i enganxosos que els del Pad Thai de manera que no és un plat que sol tenir tant èxit. La textura dels fideus pot semblar estranya al principi."
         ]);
 
         //Australia
         DB::table('plat')->insert([
             'nom'=> 'Cangur a la Parrilla',
-            'imatge_url'=> 'https://comidatipica.blog/wp-content/uploads/2020/10/Canguro-a-la-parrilla.png',
+            'imatge_url'=> 'https://i.pinimg.com/originals/66/6b/ac/666bacf273b4f8edfc212a1d01bc77ae.jpg',
             'descripcio'=> "Encara que a molts altres països la carn de cangur és desconeguda, a Austràlia és un menjar típic que és gairebé obligatori tastar. Si tagrada experimentar aquesta carn tagradarà. Si en vols més, pots demanar carn de cocodril."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Yabbies',
-            'imatge_url'=> 'https://lacomidatipica.com/wp-content/uploads/2019/05/Yabbies-.png',
+            'imatge_url'=> 'https://blog.informationplanet.com.br/wp-content/uploads/2017/10/Sem-T%C3%ADtulo-1-16.jpg',
             'descripcio'=> "Encara que el seu nom sigui una mica desconegut, aquests animals són una mena de llagostes o llagostins que viuen en aigua dolça. Hi ha moltes maneres de cuinar-los i els trobaràs en més menjars típics australians."
         ]);
 
@@ -337,17 +338,17 @@ class DatabaseSeeder extends Seeder
         //Russia
         DB::table('plat')->insert([
             'nom'=> 'Rassólnik',
-            'imatge_url'=> 'https://cdn.shopify.com/s/files/1/1257/0365/files/rassolnik1_large.jpg?v=1472748866',
+            'imatge_url'=> 'https://cdni.rbth.com/rbthmedia/images/2018.12/original/5c18f8ff85600a5a0076869e.jpg',
             'descripcio'=> "Una cosa que és evidentment tradicional a Moscou són les sopes russes. Feta de cogombres, tubercles i carn, acompanyada de crema agra. El més característic és el suc de cogombrets en què es basa aquest plat típic rus."
         ]);
         DB::table('plat')->insert([
             'nom'=> 'Kulebiaka',
-            'imatge_url'=> 'https://lacomidatipica.com/wp-content/uploads/2019/04/Kulebiaka-.png',
+            'imatge_url'=> 'https://cdn.galleries.smcloud.net/t/galleries/gf-bSQA-wSoD-NLoQ_kulebiak-latwy-przepis-na-wigilijnego-kulebiaka-1920x1080-nocrop.jpg',
             'descripcio'=> "Un pastís típic rus que generalment va farcit de salmó, arròs, ous durs, xampinyons o ceba. Té un aspecte de pa brioix i és una recepta que ha estat copiada per alts cuiners per experimentar amb nous sabors arreu del món."
         ]);
         DB::table('plat')->insert([
             'nom'=> 'Carn a la Stroganoff',
-            'imatge_url'=> 'https://www.coosur.com/uploads/recetasaceiteoliva/ternera-stroganoff.jpg',
+            'imatge_url'=> 'https://estaticos-cdn.prensaiberica.es/clip/40e16f2b-79de-4a9a-adb6-c2ab54c703fe_16-9-discover-aspect-ratio_default_0.jpg',
             'descripcio'=> "La carn més típica de Rússia és la carn a la stroganoff. Són trossets de vedella, acompanyat de bolets, ceba i una forta salsa agra. El plat ve normalment acompanyat d'arròs."
         ]);
 
@@ -360,7 +361,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('plat')->insert([
             'nom'=> 'Tacos Tijuana',
-            'imatge_url'=> 'https://tipsparatuviaje.com/wp-content/uploads/2018/04/taco-3.jpg',
+            'imatge_url'=> 'https://www.mexicodesconocido.com.mx/sites/default/files/fichas-destino/kokopelli-tacos-tijuana.png',
             'descripcio'=> "El tac estil Tijuana té la particularitat que la truita de blat de moro té una forma de con, cosa que la fa més apta per acomodar el deliciós farcit de carn, alvocat i salsa picant de chiles."
         ]);
 
@@ -379,25 +380,25 @@ class DatabaseSeeder extends Seeder
 
         DB::table('plat')->insert([
             'nom'=> 'Alfajores',
-            'imatge_url'=> 'https://www.elmundoeats.com/wp-content/uploads/2021/07/FP2-Argentine-alfajores-on-a-rack-500x375.jpg',
+            'imatge_url'=> 'https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2021/04/19/607d5decc1e75.r_d.1712-756-0.jpeg',
             'descripcio'=> "Aquesta mena de galetes farcides són un menjar típic argentí que s'ha estès a molts altres llocs del món. Poden portar el farcit que més t'agradi (mel, fruita…) encara que els més demanats són els de dolç de llet."
         ]);
         DB::table('plat')->insert([
             'nom'=> 'Empanadas Salteñas',
-            'imatge_url'=> 'https://elcordillerano1.cdn.net.ar/252/elcordillerano/images/95/02/950225_b60e587383b0cb976412c5de2dc89af2532e28925576f5994b5b671b2f1d9bdb/md.webp',
+            'imatge_url'=> 'https://www.clarin.com/img/2018/05/23/S1uISXQJX_1256x620__2.jpg',
             'descripcio'=> "Les empanades saltenyes es destaquen perquè contenen com a ingredient diferencial la patata i la carn es talla a ganivet. Es poden fer fregides o al forn."
         ]);
 
         //Egipte
         DB::table('plat')->insert([
             'nom'=> 'Ful Medames',
-            'imatge_url'=> 'https://comidasegipcias.com/wp-content/uploads/2019/09/ful-medames-receta-1024x576.jpg',
+            'imatge_url'=> 'https://www.cookingwithamc.info/sites/default/files/styles/hero/public/migrate/recipe/1573827826-amc-rid3491-image3598.jpeg.jpg?itok=E2AxkVfC',
             'descripcio'=> "Un xut d'energia que has de provar almenys una vegada (aquí se sol menjar d'esmorzar). Les faves són les grans protagonistes del plat. No és estrany que per menjar-les també et serveixin pa de pita."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Mezze',
-            'imatge_url'=> 'https://tuprensalocal.com/wp-content/uploads/2021/03/2021_0307_hummus-egipto.jpg',
+            'imatge_url'=> 'https://astelus.com/wp-content/viajes/Los-Mezzedes.jpg',
             'descripcio'=> "Els entrants freds o aperitius són molt populars en aquesta ciutat egípcia. Solen servir-se principalment en petits atuells o recipients."
         ]);
 
@@ -411,19 +412,19 @@ class DatabaseSeeder extends Seeder
         //Senegal
         DB::table('plat')->insert([
             'nom'=> 'Maafe',
-            'imatge_url'=> 'https://okdiario.com/img/2018/12/04/receta-de-maafe-senegales-1.jpg',
+            'imatge_url'=> 'https://www.bebevoyage.com/wp-content/uploads/elementor/thumbs/PXL_20210120_212500186-p73cfd4naor4rz9vweb2c6f40rzkxud4m198zlqah4.jpg',
             'descripcio'=> "Es tracta d'un dels guisats més exquisits que tastaràs, sobretot si ets amant del cacauet. És conegut com a guisat de cacauet i és popular en una gran quantitat de països, és un platet típic d'Àfrica Occidental i Àfrica Central."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Thieboudienne',
-            'imatge_url'=> 'https://www.internationalcuisine.com/wp-content/uploads/2019/08/Thieboudienne-500x500.jpeg',
+            'imatge_url'=> 'https://cloudfront-eu-central-1.images.arcpublishing.com/larazon/FQLJC5ZMGJHENNO56GRZPIBEXI.jpg',
             'descripcio'=> "El thieboudienne és un plat de tipus been cin, on tots els ingredients es preparen en una mateixa marmita. El peix pot ser de diferents tipus, juntament amb l'arròs i el tomàquet, els ingredients poden variar d'un lloc a un altre."
         ]);
 
         DB::table('plat')->insert([
             'nom'=> 'Fataya',
-            'imatge_url'=> 'https://media-cdn.tripadvisor.com/media/photo-s/19/1f/8b/10/fataya-senegal-food.jpg',
+            'imatge_url'=> 'https://assets.afcdn.com/recipe/20160422/29489_w1024h576c1cx1494cy2656.webp',
             'descripcio'=> "Són crestes de carn o peix amb ceba, tomàquet i pebre, mateixes que són acompanyades d'una salsa picant per “remullar-se”."
         ]);
 
@@ -465,6 +466,10 @@ class DatabaseSeeder extends Seeder
             'categoria_nom' =>'Líquids' //9
         ]);
 
+        DB::table('categoria')->insert([
+            'categoria_nom' =>'Fruits secs' //10
+        ]);
+
         //INGREDIENTS
         DB::table('ingredient')->insert([
             'ingredient_nom' => 'Pa',
@@ -497,7 +502,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => "Tomaques",
+            'ingredient_nom' => "Tomàquets",
             'categoria_id' => 1
         ]);
 
@@ -587,6 +592,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
+            'ingredient_nom' => "Pebre Vermell",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
             'ingredient_nom' => 'Pastanaga',
             'categoria_id' => 1
         ]);
@@ -602,6 +612,536 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Conill',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Arrós bomba",
+            'categoria_id' => 4
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Bejoques',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Fesols',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Carxofa',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Cargols',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Plaques de Canelons',
+            'categoria_id' => 5
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Formatge ratllat',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Bolets',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Carn Picada',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Tòfona',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Puerro',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pà de Pagés',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Tomàquet de temporada',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Massa de Pizza',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Mozzarella',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Albahaca',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Fetge de Pollastre',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Anchoves',
+            'categoria_id' => 3
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Tàperes',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Vi',
+            'categoria_id' => 9
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Caldo de peix',
+            'categoria_id' => 9
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salvia',
+            'categoria_id' => 7
+        ]);
+        
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salsa Hoisin',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Vi d'arrós xinés",
+            'categoria_id' => 9
+        ]);
+        
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Salsa d'ostres",
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salsa de soja fosca',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Sucre moré',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Polvo cinc espècies xineses',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Anís',
+            'categoria_id' => 9
+        ]);
+        
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Llaurer',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Carn (a triar)',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Peix (a triar)',
+            'categoria_id' => 3
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Espinaques',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Ceba Vermella',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Tallarines d'Arrós",
+            'categoria_id' => 5
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Chalotes',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Rave',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salsa de Peix',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Sucre de Palma',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Llima',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Brots de Soja',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Cacahuets',
+            'categoria_id' => 10
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Chili',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pinya',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Arrós Basmati',
+            'categoria_id' => 4
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Anacards',
+            'categoria_id' => 10
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Oli de sèsam',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Fideus d'arrós",
+            'categoria_id' => 5
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salsa de soja lleugera',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Bròquil',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Oli vegetal',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Filet de Cangur',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Rúcula',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Bledes',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Formatge feta',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Sal marina',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Mostassa',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Yabbies (llagostes blaves de riu)',
+            'categoria_id' => 3
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Caldo de carn',
+            'categoria_id' => 9
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pasta de full',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Carn magra',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Ceba perlada',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pepino',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Llet',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => "Farcit d'arrós i xampinyons",
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Anet',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Vadella',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Nata per a cuinar',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Massa de blat de moro',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Bistec picat',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Llonganissa',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salsa verda',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salsa vermella',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Coriandre',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Formatge fresc',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Truita de lat de moro',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Alvocat',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Fesols negres',
+            'categoria_id' => 4
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Vinagre',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Roquefort',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Salame',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Provolone',
+            'categoria_id' => 6
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Embotit',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Vainilla',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Farina de blat',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Dolç de llet',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'coco ratllat',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Morró vermell',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Greix',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Orenga',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Fabes',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Comí',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Kobeiba (carn, peix, nous)',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Kibbeh (mandonguilles)',
+            'categoria_id' => 2
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Hummus',
+            'categoria_id' => 4
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Cardamom',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Nou molta',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pa de pita',
+            'categoria_id' => 8
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Col',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Carbasses',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Alberginia',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Yuca',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Pebre verd',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Ostres',
+            'categoria_id' => 3
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Guindilla',
+            'categoria_id' => 7
+        ]);
+
+        DB::table('ingredient')->insert([
             'ingredient_nom' =>'Gambes',
             'categoria_id' => 3
         ]);
@@ -609,6 +1149,16 @@ class DatabaseSeeder extends Seeder
         DB::table('ingredient')->insert([
             'ingredient_nom' => 'Calamar',
             'categoria_id' => 3
+        ]);
+        
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Tofu',
+            'categoria_id' => 1
+        ]);
+
+        DB::table('ingredient')->insert([
+            'ingredient_nom' => 'Corder',
+            'categoria_id' => 2
         ]);
 
         //CIUTAT-PLAT
@@ -779,13 +1329,1077 @@ class DatabaseSeeder extends Seeder
 
         //INGREDIENT-PLAT
         DB::table('ingredients_plat')->insert([
-            'ingredient_id' => 5,
+            'ingredient_id' => 1,
+            'plat_id' => 1
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 136,
             'plat_id' => 1
         ]);
 
         DB::table('ingredients_plat')->insert([
-            'ingredient_id' => 4,
+            'ingredient_id' => 30,
             'plat_id' => 2
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 28,
+            'plat_id' => 2
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 29,
+            'plat_id' => 2
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 31,
+            'plat_id' => 2
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 32,
+            'plat_id' => 2
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 33,
+            'plat_id' => 2
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 34,
+            'plat_id' => 2
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 35,
+            'plat_id' => 3
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 36,
+            'plat_id' => 3
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 37,
+            'plat_id' => 3
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 38,
+            'plat_id' => 3
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 39,
+            'plat_id' => 3
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 40,
+            'plat_id' => 3
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 3
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 3
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 41,
+            'plat_id' => 4
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 42,
+            'plat_id' => 4
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 4
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 4
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 96,
+            'plat_id' => 5
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 5
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 5
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 5
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 43,
+            'plat_id' => 6
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 45,
+            'plat_id' => 6
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 44,
+            'plat_id' => 6
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 6
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 7,
+            'plat_id' => 6
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 46,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 47,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 48,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 49,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 88,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 51,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 1,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 8,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 7
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 7
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 9,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 52,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 53,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 54,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 55,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 56,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 57,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 58,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 59,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 10,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 11,
+            'plat_id' => 8
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 12,
+            'plat_id' => 8
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 60,
+            'plat_id' => 9
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 61,
+            'plat_id' => 9
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 62,
+            'plat_id' => 9
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 23,
+            'plat_id' => 9
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 137,
+            'plat_id' => 9
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 64,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 65,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 66,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 67,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 68,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 69,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 70,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 71,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 72,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 14,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 137,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 11
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 11
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 14,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 7,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 10,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 73,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 74,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 75,
+            'plat_id' => 12
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 76,
+            'plat_id' => 12
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 77,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 10,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 78,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 67,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 79,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 80,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 56,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 13
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 12,
+            'plat_id' => 13
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 81,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 82,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 83,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 84,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 85,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 86,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 56,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 17,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 18,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 19,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 14
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 20,
+            'plat_id' => 14
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 87,
+            'plat_id' => 15
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 15
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 15
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 15
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 38,
+            'plat_id' => 16
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 88,
+            'plat_id' => 16
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 16
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 89,
+            'plat_id' => 16
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 16
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 21,
+            'plat_id' => 16
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 90,
+            'plat_id' => 17
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 91,
+            'plat_id' => 17
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 92,
+            'plat_id' => 17
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 17,
+            'plat_id' => 17
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 17
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 26,
+            'plat_id' => 17
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 21,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 22,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 8,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 23,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 24,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 93,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 94,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 95,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 50,
+            'plat_id' => 18
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 74,
+            'plat_id' => 18
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 27,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 23,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 97,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 49,
+            'plat_id' => 19
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 86,
+            'plat_id' => 19
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 32,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 98,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 99,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 100,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 101,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 102,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 103,
+            'plat_id' => 20
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 104,
+            'plat_id' => 20
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 103,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 105,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 106,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 72,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 7,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 93,
+            'plat_id' => 21
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 21
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 1,
+            'plat_id' => 22
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 9,
+            'plat_id' => 22
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 22
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 18,
+            'plat_id' => 22
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 107,
+            'plat_id' => 22
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 20,
+            'plat_id' => 22
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 109,
+            'plat_id' => 23
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 110,
+            'plat_id' => 23
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 111,
+            'plat_id' => 23
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 112,
+            'plat_id' => 23
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 8,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 18,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 56,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 113,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 114,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 115,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 116,
+            'plat_id' => 24
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 22,
+            'plat_id' => 24
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 9,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 17,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 117,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 118,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 119,
+            'plat_id' => 25
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 25,
+            'plat_id' => 25
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 18,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 24,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 7,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 25,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 120,
+            'plat_id' => 26
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 121,
+            'plat_id' => 26
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 122,
+            'plat_id' => 27
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 123,
+            'plat_id' => 27
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 124,
+            'plat_id' => 27
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 27,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 138,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 1,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 25,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 24,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 125,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 126,
+            'plat_id' => 28
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 127,
+            'plat_id' => 28
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 138,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 8,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 26,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 19,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 7,
+            'plat_id' => 29
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 59,
+            'plat_id' => 29
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 26,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 7,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 25,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 24,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 61,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 30,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 128,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 129,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 130,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 131,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 132,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 133,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 59,
+            'plat_id' => 30
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 134,
+            'plat_id' => 30
+        ]);
+
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 22,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 15,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 8,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 38,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 3,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 7,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 114,
+            'plat_id' => 31
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 13,
+            'plat_id' => 31
         ]);
     }
 }
