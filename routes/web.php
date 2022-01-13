@@ -13,13 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('/home', [\App\Http\Controllers\PaisController::class, 'index'])->name('home'); //show és una funció a dins el controlador
+Route::get('/', [\App\Http\Controllers\PaisController::class, 'index'])->name('home'); //index és una funció a dins el controlador
 
+Route::get('/{pais_id}', [\App\Http\Controllers\CiutatController::class, 'index'])->name('detall');
+Route::get('/{pais_id}/{ciutat_id}', [\App\Http\Controllers\CiutatController::class, 'showP'])->name('ciutatplat');
+Route::get('/{ciutat_nom}/plat/{plat_id}', [\App\Http\Controllers\PlatController::class, 'index'])->name('plat');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

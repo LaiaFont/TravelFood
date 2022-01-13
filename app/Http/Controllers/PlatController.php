@@ -12,9 +12,18 @@ class PlatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+    private $repository;
+    public function __construct(DataController $repository)
     {
-        //
+        $this->repository = $repository;
+    }
+
+    public function index(Request $request, DataController $repository)
+    {
+        $plats = Plat::with('ingredient')->where('id', '=', $request->route('plat_id'))->get();       
+        
+        return view('detall.plat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
     }
 
     /**

@@ -12,9 +12,26 @@ class CiutatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+    private $repository;
+
+    public function __construct(DataController $repository)
     {
-        //
+        $this->repository = $repository;
+    }
+
+    public function index(Request $request, DataController $repository)
+    {
+        $ciutats = Ciutat::where('pais_id', '=', $request->route('pais_id'))->paginate(10);   
+        
+        return view('detall.pais', ['ciutats'=>$ciutats, 'data'=>$this->repository->getData()]);
+    }
+
+    public function showP(Request $request, DataController $repository)
+    {
+        $ciutats = Ciutat::with('plat')->where('id', '=', $request->route('ciutat_id'))->get();
+        
+        return view('detall.ciutat', ['ciutats'=>$ciutats, 'data'=>$this->repository->getData()]);
     }
 
     /**
