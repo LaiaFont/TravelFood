@@ -1570,6 +1570,47 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 21,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 13,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 5,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 4,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 9,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 63,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 11,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 10,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 6,
+            'plat_id' => 10
+        ]);
+        DB::table('ingredients_plat')->insert([
+            'ingredient_id' => 2,
+            'plat_id' => 10
+        ]);
+
+        DB::table('ingredients_plat')->insert([
             'ingredient_id' => 64,
             'plat_id' => 11
         ]);
