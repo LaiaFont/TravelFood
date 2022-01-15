@@ -431,19 +431,23 @@ class DatabaseSeeder extends Seeder
 
         //CATEGORIES
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Verdures' //1
+            'categoria_nom' =>'Verdura', //1
+            'imatge_url' => '/public/images/icons/verdura.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Carn' //2
+            'categoria_nom' =>'Carn', //2
+            'imatge_url' => '/public/images/icons/carn.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Marisc' //3
+            'categoria_nom' =>'Marisc', //3
+            'imatge_url' => '/public/images/icons/marisc.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Llegums' //4
+            'categoria_nom' =>'Llegums', //4
+            'imatge_url' => '/public/images/icons/llegums.png'
         ]);
 
         DB::table('categoria')->insert([
@@ -451,24 +455,30 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Làctics' //6
+            'categoria_nom' =>'Làctics', //6
+            'imatge_url' => '/public/images/icons/lactics.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Condiments' //7
+            'categoria_nom' =>'Condiments', //7
+            'imatge_url' => '/public/images/icons/condiments.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Cereals' //8
+            'categoria_nom' =>'Cereals', //8
+            'imatge_url' => '/public/images/icons/cereals.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Líquids' //9
+            'categoria_nom' =>'Líquids', //9
+            'imatge_url' => '/public/images/icons/liquids.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Fruits secs' //10
+            'categoria_nom' =>'Fruits secs', //10
+            'imatge_url' => '/public/images/icons/fruits_secs.png'
         ]);
+
 
         //INGREDIENTS
         DB::table('ingredient')->insert([
