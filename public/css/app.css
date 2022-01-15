@@ -11304,7 +11304,15 @@ textarea.form-control-lg {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}*/
+}
+*/
+@font-face {
+  font-family: "ArsenicaTrial";
+  src: "/fonts/ArsenicaTrial-Light.ttf";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .card-header {
   background-color: #f5bfc0;
 }
@@ -11333,6 +11341,7 @@ footer .copyright {
 
 * {
   outline: none !important;
+  font-family: "ArsenicaTrial" !important;
 }
 
 body {
@@ -11444,7 +11453,6 @@ footer p, section p {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Montserrat";
   line-height: 22px;
   color: #000000;
 }
@@ -11456,7 +11464,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 p, span, a, ul, li {
-  font-family: "Montserrat";
   font-size: 16px;
   line-height: 18px;
   color: #000000;
