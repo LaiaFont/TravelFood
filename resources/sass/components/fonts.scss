@@ -25,7 +25,17 @@
 
 @font-face {
   font-family: 'SilverSilk';
-  src: url('/fonts/SilverSilk.ttf');
+  src: url('../../fonts/SilverSilk.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+
+@font-face {
+  font-family: 'Champagne';
+  src: url('../../fonts/Champagne&Limousines.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
