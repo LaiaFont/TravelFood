@@ -11438,9 +11438,13 @@ nav .btn:hover {
 }
 .informacio img {
   width: 50px;
+  float: left;
 }
 .informacio p {
   padding: 10px 0;
+}
+.informacio p.ingredient {
+  float: right;
 }
 
 h2, .h2 {
