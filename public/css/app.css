@@ -11366,6 +11366,10 @@ nav .btn {
 nav .btn:hover {
   background-color: #D9E5D6;
 }
+nav a img.login-img {
+  width: 40px;
+  padding-rigth: 10px;
+}
 
 .card .card-img {
   width: 100%;

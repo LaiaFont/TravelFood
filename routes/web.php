@@ -23,6 +23,8 @@ Route::get('/{pais_id}', [\App\Http\Controllers\CiutatController::class, 'index'
 Route::get('/{pais_id}/{ciutat_id}', [\App\Http\Controllers\CiutatController::class, 'showP'])->name('ciutatplat');
 Route::get('/{ciutat_nom}/plat/{plat_id}', [\App\Http\Controllers\PlatController::class, 'index'])->name('plat');
 
+Route::get('/lang/{idioma}', 'App\Http\Controllers\LocalitzacioController@index');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
