@@ -17,7 +17,7 @@
                 @if ($ingredient->categoria_id == $icon->id)
                 <div class="col-sm">
                     <img src="{{ $icon->imatge_url }}">
-                    <p> {{ $ingredient->ingredient_nom }} </p>
+                    <p class="ingredient"> {{ $ingredient->ingredient_nom }} </p>
                 </div>
                 @endif
             @endforeach

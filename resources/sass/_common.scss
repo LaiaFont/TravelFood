@@ -102,10 +102,15 @@ nav {
 
     img {
         width: 50px;
+        float: left;
     }
 
     p {
         padding: 10px 0;
+        &.ingredient {
+            float: right;
+        }
+        
     }
 }
 
