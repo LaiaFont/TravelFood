@@ -12,7 +12,12 @@
     <div class="informacio">
         <h3> Ingredients </h3>
         @foreach ($plat->ingredient as $ingredient) <!--afegir img a icone-->
-            <p> {{ $ingredient->ingredient_nom }} </p>
+            @foreach($icons["icons"] as $icon)
+                @if ($ingredient->categoria_id == $icon->id)
+                    <img src="{{ $icon->imatge_url }}">
+                    <p> {{ $ingredient->ingredient_nom }} </p>
+                @endif
+            @endforeach
         @endforeach
         <h3> Descripció </h3>
         <p> {{ $plat->descripcio }} </p>

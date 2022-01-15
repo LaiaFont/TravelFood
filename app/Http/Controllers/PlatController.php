@@ -23,7 +23,7 @@ class PlatController extends Controller
     {
         $plats = Plat::with('ingredient')->where('id', '=', $request->route('plat_id'))->get();       
         
-        return view('detall.plat', ['plats'=>$plats, 'data'=>$this->repository->getData()]);
+        return view('detall.plat', ['plats'=>$plats, 'data'=>$this->repository->getData(), 'icons'=>$this->repository->getIcons()]);
     }
 
     /**
