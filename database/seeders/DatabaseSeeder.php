@@ -119,7 +119,7 @@ class DatabaseSeeder extends Seeder
         //tailandia
         DB::table('ciutat')->insert([
             'ciutat_nom'=> 'Bankok',
-            'imatge_url'=>'https://dondealojarse.net/wp-content/uploads/2019/11/bangkok.jpg',
+            'imatge_url'=>'https://ep01.epimg.net/elviajero/imagenes/2017/12/01/actualidad/1512143439_985308_1512146284_noticia_normal.jpg',
             'pais_id'=>4
         ]);
         DB::table('ciutat')->insert([

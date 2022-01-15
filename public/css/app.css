@@ -11378,6 +11378,7 @@ nav a img.login-img {
      object-fit: cover;
 }
 .card .card-title {
+  padding-left: 40%;
   font-size: 30px;
 }
 
@@ -11401,6 +11402,7 @@ nav a img.login-img {
 #carousel .carousel-inner .carousel-caption h5, #carousel .carousel-inner .carousel-caption .h5 {
   color: #ffffff;
   font-size: 35px;
+  padding-bottom: 15px;
 }
 #carousel .carousel-inner .carousel-caption p {
   color: #ffffff;
@@ -11415,9 +11417,11 @@ nav a img.login-img {
      object-fit: cover;
 }
 .row h1, .row .h1 {
+  font-size: 30px;
   margin: 25px 0;
 }
 .row h5, .row .h5 {
+  padding-left: 20%;
   font-size: 30px;
 }
 
