@@ -15,7 +15,7 @@
         @foreach ($plat->ingredient as $ingredient) <!--afegir img a icone-->
             @foreach($icons["icons"] as $icon)
                 @if ($ingredient->categoria_id == $icon->id)
-                <div class="col-sm">
+                <div class="col-lg-2">
                     <img src="{{ $icon->imatge_url }}">
                     <p class="ingredient"> {{ $ingredient->ingredient_nom }} </p>
                 </div>

@@ -100,18 +100,23 @@ nav {
         margin-bottom: 10px;
     }
 
-    img {
-        width: 50px;
-        float: left;
-    }
+    .col-lg-2 {
+        border-right: 2px $rosa-fosc solid;
 
-    p {
-        padding: 10px 0;
-        &.ingredient {
-            float: right;
+        img {
+            width: 50px;
+            float: left;
         }
-        
-    }
+    
+        p {
+            padding: 10px 0;
+
+            &.ingredient {
+                text-align: center;
+            }
+            
+        }
+    }    
 }
 
 h2{
