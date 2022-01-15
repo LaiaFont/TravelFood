@@ -9,6 +9,7 @@ class Categoria extends Model
 {
     use HasFactory;
     protected $table="categoria";
+    
     public function ingredient() {
         return $this->hasMany('App\Models\Ingredients');
     }

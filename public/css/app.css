@@ -11379,7 +11379,7 @@ nav .btn:hover {
      object-fit: cover;
 }
 #carousel .carousel-inner .carousel-caption {
-  background-image: linear-gradient(to bottom, rgba(250, 0, 0, 0) 0px, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to bottom, rgba(250, 0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 100%);
   width: 100%;
   left: 0;
   bottom: 0;
