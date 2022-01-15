@@ -11307,8 +11307,8 @@ textarea.form-control-lg {
 }
 */
 @font-face {
-  font-family: "ArsenicaTrial";
-  src: "/fonts/ArsenicaTrial-Light.ttf";
+  font-family: "SilverSilk";
+  src: url("/fonts/SilverSilk.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11341,7 +11341,7 @@ footer .copyright {
 
 * {
   outline: none !important;
-  font-family: "ArsenicaTrial" !important;
+  font-family: "SilverSilk" !important;
 }
 
 body {
