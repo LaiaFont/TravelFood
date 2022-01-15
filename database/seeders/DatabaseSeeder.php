@@ -451,31 +451,27 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Pasta' //5
-        ]);
-
-        DB::table('categoria')->insert([
-            'categoria_nom' =>'Làctics', //6
+            'categoria_nom' =>'Làctics', //5
             'imatge_url' => '/public/images/icons/lactics.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Condiments', //7
+            'categoria_nom' =>'Condiments', //6
             'imatge_url' => '/public/images/icons/condiments.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Cereals', //8
+            'categoria_nom' =>'Cereals', //7
             'imatge_url' => '/public/images/icons/cereals.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Líquids', //9
+            'categoria_nom' =>'Líquids', //8
             'imatge_url' => '/public/images/icons/liquids.png'
         ]);
 
         DB::table('categoria')->insert([
-            'categoria_nom' =>'Fruits secs', //10
+            'categoria_nom' =>'Fruits secs', //9
             'imatge_url' => '/public/images/icons/fruits_secs.png'
         ]);
 
@@ -653,7 +649,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('ingredient')->insert([
             'ingredient_nom' => 'Plaques de Canelons',
-            'categoria_id' => 5
+            'categoria_id' => 7
         ]);
 
         DB::table('ingredient')->insert([
@@ -783,7 +779,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('ingredient')->insert([
             'ingredient_nom' => 'Peix (a triar)',
-            'categoria_id' => 3
+            'categoria_id' => 2
         ]);
 
         DB::table('ingredient')->insert([
@@ -798,7 +794,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('ingredient')->insert([
             'ingredient_nom' => "Tallarines d'Arrós",
-            'categoria_id' => 5
+            'categoria_id' => 7
         ]);
 
         DB::table('ingredient')->insert([
@@ -863,7 +859,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('ingredient')->insert([
             'ingredient_nom' => "Fideus d'arrós",
-            'categoria_id' => 5
+            'categoria_id' => 7
         ]);
 
         DB::table('ingredient')->insert([
