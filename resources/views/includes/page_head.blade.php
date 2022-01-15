@@ -10,7 +10,7 @@
 
   <title>{{ config('app.name', 'Laravel') }}</title>
 
-
+  <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}" sizes="196x196" />
   <!-- Fonts -->
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
