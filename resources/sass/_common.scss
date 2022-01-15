@@ -33,6 +33,7 @@ nav {
         object-fit: cover;
     }
     .card-title{
+        padding-left: 40%;
         font-size: 30px;
     }
 }
@@ -60,6 +61,7 @@ nav {
 
                 color: $white;
                 font-size: 35px;
+                padding-bottom: 15px;
             }
             p {
                 color: $white;
@@ -78,10 +80,12 @@ nav {
     }
 
     h1 {
+        font-size: 30px;
         margin: 25px 0;
     }
 
     h5{
+        padding-left: 20%;
         font-size:30px;
     }
 }
