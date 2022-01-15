@@ -31,25 +31,30 @@ nav {
 
 #carousel {
     margin: 50px auto auto;
+    
 
     .carousel-indicators {
         margin-left: 20% !important;
     }
     
-    img {
-        height: 40rem;
-        object-fit: cover;
-    }
-
-    .carousel-caption {
-        h5 {
-            color: $white;
-            font-size: large;
+    .carousel-inner {
+        img {
+            height: 40rem;
+            object-fit: cover;
         }
-        p {
-            color: $white;
-            font-size: large;
-            text-shadow: black 0.1em 0.1em 0.2em;
+    
+        .carousel-caption {
+            background-image: linear-gradient(to bottom, rgba(250, 0, 0, 0) 0px, rgba(0, 0, 0, 0.5) 100%);
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            h5 {
+                color: $white;
+            }
+            p {
+                color: $white;
+                margin-bottom: 50px;
+            }
         }
     }
 }
