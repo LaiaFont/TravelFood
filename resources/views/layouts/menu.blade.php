@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand">Continents</a>
+        <h2 class="navbar-brand">Continents</h2>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,4 +23,5 @@
             </ul>
         </div>
     </div>
+    <a href="/admin" ><img class="login-img" src="/images/login.png"></a>
 </nav>
