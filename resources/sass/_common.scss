@@ -1,6 +1,6 @@
 *{
   outline:none!important;
-  font-family: 'SilverSilk'!important;
+  font-family: 'Champagne'!important;
 }
 
 body {
@@ -44,9 +44,12 @@ nav {
     .carousel-caption {
         h5 {
             color: $white;
+            font-size: large;
         }
         p {
             color: $white;
+            font-size: large;
+            text-shadow: black 0.1em 0.1em 0.2em;
         }
     }
 }

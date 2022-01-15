@@ -11308,7 +11308,14 @@ textarea.form-control-lg {
 */
 @font-face {
   font-family: "SilverSilk";
-  src: url("/fonts/SilverSilk.ttf");
+  src: url(/fonts/SilverSilk.ttf?b0a1f8bddd2fabf44ea44655c05a50ea);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Champagne";
+  src: url(/fonts/Champagne&Limousines.ttf?97e52f7c6df37667f8500c0f421c4f72);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11341,7 +11348,7 @@ footer .copyright {
 
 * {
   outline: none !important;
-  font-family: "SilverSilk" !important;
+  font-family: "Champagne" !important;
 }
 
 body {
@@ -11380,9 +11387,12 @@ nav .btn:hover {
 }
 #carousel .carousel-caption h5, #carousel .carousel-caption .h5 {
   color: #ffffff;
+  font-size: large;
 }
 #carousel .carousel-caption p {
   color: #ffffff;
+  font-size: large;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .row .card-img {
