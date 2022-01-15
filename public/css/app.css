@@ -11436,6 +11436,9 @@ nav .btn:hover {
 .informacio h3, .informacio .h3 {
   margin-bottom: 10px;
 }
+.informacio img {
+  width: 50px;
+}
 .informacio p {
   padding: 10px 0;
 }

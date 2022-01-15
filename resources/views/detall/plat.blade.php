@@ -11,14 +11,18 @@
     </div>
     <div class="informacio">
         <h3> Ingredients </h3>
+        <div class="row">
         @foreach ($plat->ingredient as $ingredient) <!--afegir img a icone-->
             @foreach($icons["icons"] as $icon)
                 @if ($ingredient->categoria_id == $icon->id)
+                <div class="col-sm">
                     <img src="{{ $icon->imatge_url }}">
                     <p> {{ $ingredient->ingredient_nom }} </p>
+                </div>
                 @endif
             @endforeach
         @endforeach
+            </div>
         <h3> Descripció </h3>
         <p> {{ $plat->descripcio }} </p>
     </div>
