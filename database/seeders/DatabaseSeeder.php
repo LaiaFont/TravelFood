@@ -593,7 +593,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => "Julibert",
+            'ingredient_nom' => "Julivert",
             'categoria_id' => 6
         ]);
 
@@ -624,7 +624,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('ingredient')->insert([
             'ingredient_nom' => "Arrós bomba",
-            'categoria_id' => 7
+            'categoria_id' => 4
         ]);
 
         DB::table('ingredient')->insert([
@@ -698,7 +698,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => 'Albahaca',
+            'ingredient_nom' => 'Alfàbrega',
             'categoria_id' => 6
         ]);
 
@@ -708,7 +708,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => 'Anchoves',
+            'ingredient_nom' => 'Anxoves',
             'categoria_id' => 3
         ]);
 
@@ -798,7 +798,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => 'Chalotes',
+            'ingredient_nom' => 'Xalotes',
             'categoria_id' => 1
         ]);
 
@@ -933,7 +933,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => 'Pepino',
+            'ingredient_nom' => 'Cogombre',
             'categoria_id' => 1
         ]);
 
@@ -1053,7 +1053,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => 'coco ratllat',
+            'ingredient_nom' => 'Coco ratllat',
             'categoria_id' => 6
         ]);
 
@@ -1073,7 +1073,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => 'Fabes',
+            'ingredient_nom' => 'Faves',
             'categoria_id' => 1
         ]);
 
