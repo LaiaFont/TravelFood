@@ -998,7 +998,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('ingredient')->insert([
-            'ingredient_nom' => 'Truita de lat de moro',
+            'ingredient_nom' => 'Truita de blat de moro',
             'categoria_id' => 7
         ]);
 
