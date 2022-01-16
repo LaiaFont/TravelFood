@@ -16,8 +16,17 @@
             @foreach($icons["icons"] as $icon)
                 @if ($ingredient->categoria_id == $icon->id)
                 <div class="col-lg-2">
+<<<<<<< HEAD
                     <img src="{{ asset($icon->imatge_url) }}">
+=======
+<<<<<<< HEAD
+                    <img src="{{ asset($icon->imatge_url) }}">
+                    <p class="ingredient"> {{__($ingredient->ingredient_nom) }} </p>
+=======
+                    <img src="{{ asset("/public/$icon->imatge_url") }}">
+>>>>>>> e1ab5e1fe7ff9f468b1627b0a1a7bbc982d01654
                     <p class="ingredient"> {{ $ingredient->ingredient_nom }} </p>
+>>>>>>> 10b2f8b0960adaf05f9eaca663df128ee886b01b
                 </div>
                 @endif
             @endforeach

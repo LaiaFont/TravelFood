@@ -6,7 +6,7 @@
 @section('content')
 @foreach ($ciutats as $ciutat)
     <div class="row">
-        <h1 class="col-lg-6">{{ $ciutat->ciutat_nom }}</h1>
+        <h1 class="col-lg-6">{{$ciutat->ciutat_nom}}</h1>
     </div>
     <div class="row">
         @foreach ($ciutat->plat as $plat) 
