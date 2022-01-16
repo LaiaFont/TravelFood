@@ -10,12 +10,12 @@
             @foreach ($data['continents'] as $continent) 
             <li class="nav-item dropdown">
                 <a class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
-                    {{ $continent }}
+                    {{__($continent)}}
                 </a>
                 <ul class = "dropdown-menu" aria-labelledby="dropdownMenuButton">
                     @foreach ($data['paisos'] as $pais)
                         @if ($pais->continent == $continent)
-                            <li><a class="dropdown-item" href="{{ route('detall',[$pais->id])  }}"> {{ $pais->pais_nom }} </a></li>
+                            <li><a class="dropdown-item" href="{{ route('detall',[$pais->id])  }}"> {{__($pais->pais_nom)}} </a></li>
                         @endif
                     @endforeach
                 </ul>       
