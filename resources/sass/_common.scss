@@ -8,6 +8,10 @@ body {
 }
 
 nav {
+    h2 {
+        padding: 0;
+        margin: 0 1rem 0 0;
+    }
     border-bottom: 1px $header-lighter solid;
     .btn {
         background-color: $header-lighter;
@@ -23,6 +27,7 @@ nav {
         width: 40px;
         padding-right: 10px;
     }
+
 }
 
 
