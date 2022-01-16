@@ -9,7 +9,7 @@ class Idioma {
     {
         if (session()->has('idioma')) {  // comprovem si hi ha un idioma en el session
             App::setlocale( session()->get('idioma'));   // posem l'idioma a la app per tal que les vistes l'utilitzin
-            return $next($request);
         } 
+        return $next($request);
     }
 }
