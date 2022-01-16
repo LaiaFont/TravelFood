@@ -11358,6 +11358,10 @@ body {
 nav {
   border-bottom: 1px #ffddde solid;
 }
+nav h2, nav .h2 {
+  padding: 0;
+  margin: 0 1rem 0 0;
+}
 nav .btn {
   background-color: #ffddde;
   border: #ffddde;
@@ -11368,7 +11372,7 @@ nav .btn:hover {
 }
 nav a img.login-img {
   width: 40px;
-  padding-rigth: 10px;
+  padding-right: 10px;
 }
 
 .card .card-img {
