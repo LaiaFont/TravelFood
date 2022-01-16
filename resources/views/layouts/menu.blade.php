@@ -35,7 +35,7 @@
                 </div>
             </li>
         
-            <a href="/public/admin"><img class="login-img" src="/images/login.png"></a>
+            <a href="/public/admin"><img class="login-img" src="{{ asset("images/login.png") }}"></a>
         </span>
     </div>
 </nav>
