@@ -10,7 +10,7 @@
         <img class="img plat" src="{{ $plat->imatge_url }}">
     </div>
     <div class="informacio">
-        <h3> Ingredients </h3>
+        <h3> {{__("Ingredients") }} </h3>
         <div class="row">
         @foreach ($plat->ingredient as $ingredient) <!--afegir img a icone-->
             @foreach($icons["icons"] as $icon)
@@ -23,7 +23,7 @@
             @endforeach
         @endforeach
             </div>
-        <h3> Descripció </h3>
+        <h3> {{__("Descripció") }} </h3>
         <p> {{ $plat->descripcio }} </p>
     </div>
 @endforeach

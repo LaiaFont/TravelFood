@@ -624,7 +624,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('ingredient')->insert([
             'ingredient_nom' => "Arrós bomba",
-            'categoria_id' => 4
+            'categoria_id' => 7
         ]);
 
         DB::table('ingredient')->insert([

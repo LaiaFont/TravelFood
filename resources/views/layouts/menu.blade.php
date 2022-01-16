@@ -23,5 +23,18 @@
             </ul>
         </div>
     </div>
+
+    <li class="nav-item dropdown" style="list-style: none;">
+        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false" v-pre>
+            {{ App::getlocale() }}
+            <span class="caret"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="{{url('lang/ca')}}">Català</a>
+             <a class="dropdown-item" href="{{url('lang/es')}}">Español</a>
+             <a class="dropdown-item" href="{{url('lang/en')}}">English</a>
+        </div>
+    </li>
+
     <a href="/admin" ><img class="login-img" src="/images/login.png"></a>
 </nav>
