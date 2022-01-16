@@ -11282,40 +11282,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*@font-face {
-  font-family: 'Roboto';
-  src: url('../../fonts/Roboto-Bold.eot');
-  src: url('../../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../../fonts/Roboto-Bold.woff2') format('woff2'),
-      url('../../fonts/Roboto-Bold.woff') format('woff'),
-      url('../../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../../fonts/Montserrat-Regular.eot');
-  src: url('../../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../../fonts/Montserrat-Regular.woff2') format('woff2'),
-      url('../../fonts/Montserrat-Regular.woff') format('woff'),
-      url('../../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-*/
-@font-face {
-  font-family: "SilverSilk";
-  src: url(/fonts/SilverSilk.ttf?b0a1f8bddd2fabf44ea44655c05a50ea);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 @font-face {
   font-family: "Champagne";
-  src: url(/fonts/Champagne&Limousines.ttf?97e52f7c6df37667f8500c0f421c4f72);
+  src: url("/fonts/Champagne&Limousines.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
