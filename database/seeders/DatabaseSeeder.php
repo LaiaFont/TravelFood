@@ -432,47 +432,47 @@ class DatabaseSeeder extends Seeder
         //CATEGORIES
         DB::table('categoria')->insert([
             'categoria_nom' =>'Verdura', //1
-            'imatge_url' => '/images/icons/verdura.png'
+            'imatge_url' => '../../images/icons/verdura.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Carn', //2
-            'imatge_url' => '/images/icons/carn.png'
+            'imatge_url' => '../../images/icons/carn.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Marisc', //3
-            'imatge_url' => '/images/icons/marisc.png'
+            'imatge_url' => '../../images/icons/marisc.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Llegums', //4
-            'imatge_url' => '/images/icons/llegums.png'
+            'imatge_url' => '../../images/icons/llegums.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Làctics', //5
-            'imatge_url' => '/images/icons/lactics.png'
+            'imatge_url' => '../../images/icons/lactics.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Condiments', //6
-            'imatge_url' => '/images/icons/condiments.png'
+            'imatge_url' => '../../images/icons/condiments.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Cereals', //7
-            'imatge_url' => '/images/icons/cereals.png'
+            'imatge_url' => '../../images/icons/cereals.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Líquids', //8
-            'imatge_url' => '/images/icons/liquids.png'
+            'imatge_url' => '../../images/icons/liquids.png'
         ]);
 
         DB::table('categoria')->insert([
             'categoria_nom' =>'Fruits secs', //9
-            'imatge_url' => '/images/icons/fruits_secs.png'
+            'imatge_url' => '../../images/icons/fruits_secs.png'
         ]);
 
 

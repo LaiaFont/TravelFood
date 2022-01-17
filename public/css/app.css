@@ -11284,7 +11284,7 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "Champagne";
-  src: url("/public/fonts/Champagne&Limousines.ttf");
+  src: url(/fonts/Champagne&Limousines.ttf?97e52f7c6df37667f8500c0f421c4f72);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
