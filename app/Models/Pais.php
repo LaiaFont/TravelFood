@@ -11,8 +11,4 @@ class Pais extends Model
     public function ciutat() {
         return $this->hasMany('App\Models\Ciutat');
     }
-
-    public function continent() {
-        return $this->continent;
-    }
 }
