@@ -4,7 +4,7 @@
 [Albert Vargas](https://www.github.com/AlbertsUVic) and Laia Font
 ## Description
 A webpage created for the Entorns Web subject.
-### What is it about?
+### What is it about? :shipit:
 In this web you can find different foods from around the world. It includes:
 - Images of the dish
 - Descriptions of the dish
