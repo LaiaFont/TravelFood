@@ -9,3 +9,7 @@ In this web you can find different foods from around the world. It includes:
 - Images of the dish
 - Descriptions of the dish
 - List of ingredients of the dish
+
+## Improvements
+- [x] Receive a good mark
+- [ ] Add responsive styles
