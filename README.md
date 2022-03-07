@@ -5,4 +5,7 @@
 ## Description
 A webpage created for the Entorns Web subject.
 ### What is it about?
-In this web you can find different foods from around the world, with images and the ingredients of each food.
+In this web you can find different foods from around the world. It includes:
+- Images of the dish
+- Descriptions of the dish
+- List of ingredients of the dish
