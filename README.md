@@ -1,4 +1,5 @@
-# Travel Food
+### <img src="/public/images/logo.png">
+# Travel Food 
 ## Authors
 Albert Vargas and Laia Font
 ## Description
