@@ -1,7 +1,7 @@
 ### <img src="/public/images/logo.png">
 # Travel Food 
 ## Authors
-Albert Vargas and Laia Font
+[Albert Vargas](https://www.github.com/AlbertsUVic) and Laia Font
 ## Description
 A webpage created for the Entorns Web subject.
 ### What is it about?
